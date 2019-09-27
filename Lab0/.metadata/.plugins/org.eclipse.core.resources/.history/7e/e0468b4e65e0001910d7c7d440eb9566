@@ -1,0 +1,16 @@
+	.syntax unified
+	.cpu cortex-m4
+	.thumb
+.data
+	X: .word 5
+	Y: .word 10
+	Z: .word
+.text
+.global main
+	.equ AA, 0x55
+main:
+	ldr r0, [=X]
+	ldr r1, [=Y]
+	mul r2, r1, r0
+	movs [=Z], r2
+L: B L

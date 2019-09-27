@@ -1,0 +1,14 @@
+23:33:49 **** Incremental Build of configuration Debug for project Hamming_distance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab0\Hamming_distance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:11: Error: invalid immediate: 21930 is out of range
+../src/main.s:12: Error: invalid immediate: 43605 is out of range
+make: *** [src/main.o] Error 1
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+
+23:33:49 Build Finished (took 277ms)
+

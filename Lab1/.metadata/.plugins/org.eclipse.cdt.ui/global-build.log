@@ -1,0 +1,403 @@
+23:41:48 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: HammingDistance.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab1/HammingDistance/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HammingDistance.elf" @"objects.list"   -lm
+Finished building target: HammingDistance.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HammingDistance.elf" "HammingDistance.bin"
+arm-none-eabi-size "HammingDistance.elf"
+   text	   data	    bss	    dec	    hex	filename
+    944	   1096	   1088	   3128	    c38	HammingDistance.elf
+ 
+23:41:52 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+23:43:13 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: HammingDistance.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab1/HammingDistance/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HammingDistance.elf" @"objects.list"   -lm
+Finished building target: HammingDistance.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HammingDistance.elf" "HammingDistance.bin"
+arm-none-eabi-size "HammingDistance.elf"
+   text	   data	    bss	    dec	    hex	filename
+    944	   1096	   1088	   3128	    c38	HammingDistance.elf
+ 
+23:43:20 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:15: Error: invalid constant (55aa) after fixup
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+23:48:18 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:15: Error: invalid constant (55aa) after fixup
+make: *** [src/main.o] Error 1
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+23:49:55 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: HammingDistance.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab1/HammingDistance/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HammingDistance.elf" @"objects.list"   -lm
+Finished building target: HammingDistance.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HammingDistance.elf" "HammingDistance.bin"
+arm-none-eabi-size "HammingDistance.elf"
+   text	   data	    bss	    dec	    hex	filename
+    944	   1096	   1088	   3128	    c38	HammingDistance.elf
+ 
+23:50:17 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:12: Error: invalid immediate: 21930 is out of range
+make: *** [src/main.o] Error 1
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+23:51:22 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:12: Error: garbage following instruction -- `movs r0,#55AA'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+23:51:25 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:12: Error: garbage following instruction -- `movs r0,#55AA'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+23:52:16 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:13: Error: invalid immediate: 43605 is out of range
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+23:52:41 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: HammingDistance.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab1/HammingDistance/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HammingDistance.elf" @"objects.list"   -lm
+src/main.o: In function `main':
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug/../src/main.s:15: undefined reference to `hamm'
+collect2.exe: error: ld returned 1 exit status
+makefile:34: recipe for target 'HammingDistance.elf' failed
+make: *** [HammingDistance.elf] Error 1
+23:55:54 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:12: Error: invalid immediate: 21930 is out of range
+../src/main.s:13: Error: invalid immediate: 43605 is out of range
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+23:57:12 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:12: Error: invalid immediate: 21930 is out of range
+../src/main.s:13: Error: invalid immediate: 43605 is out of range
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+23:57:31 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:12: Error: invalid immediate: 1370 is out of range
+../src/main.s:13: Error: invalid immediate: 43605 is out of range
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+23:57:59 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:12: Error: invalid immediate: 256 is out of range
+make: *** [src/main.o] Error 1
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+23:58:08 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:12: Error: invalid immediate: 256 is out of range
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+00:02:21 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:12: Error: unshifted register required -- `mvn r0,#X'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+00:03:16 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:12: Error: immediate expression requires a # prefix -- `mov r0,=X'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+00:04:24 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: HammingDistance.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab1/HammingDistance/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HammingDistance.elf" @"objects.list"   -lm
+Finished building target: HammingDistance.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HammingDistance.elf" "HammingDistance.bin"
+arm-none-eabi-size "HammingDistance.elf"
+   text	   data	    bss	    dec	    hex	filename
+    952	   1096	   1088	   3136	    c40	HammingDistance.elf
+ 
+00:04:31 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+00:05:01 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:12: Error: invalid offset, value too big (0xFFFFFFFC)
+make: *** [src/main.o] Error 1
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+00:05:05 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:12: Error: invalid offset, value too big (0xFFFFFFFC)
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+00:06:09 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:12: Error: ARM register expected -- `ldr r0,[#X]'
+make: *** [src/main.o] Error 1
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+00:06:21 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: HammingDistance.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab1/HammingDistance/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HammingDistance.elf" @"objects.list"   -lm
+Finished building target: HammingDistance.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HammingDistance.elf" "HammingDistance.bin"
+arm-none-eabi-size "HammingDistance.elf"
+   text	   data	    bss	    dec	    hex	filename
+    952	   1096	   1088	   3136	    c40	HammingDistance.elf
+ 
+00:06:27 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+17:43:37 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: HammingDistance.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab1/HammingDistance/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HammingDistance.elf" @"objects.list"   -lm
+Finished building target: HammingDistance.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HammingDistance.elf" "HammingDistance.bin"
+arm-none-eabi-size "HammingDistance.elf"
+   text	   data	    bss	    dec	    hex	filename
+    952	   1096	   1088	   3136	    c40	HammingDistance.elf
+ 
+17:43:41 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+17:44:06 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+17:44:11 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+17:48:56 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:11: Error: garbage following instruction -- `movs r3,r1 mod 2'
+../src/main.s:12: Error: immediate expression requires a # prefix -- `mov r0,'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+17:49:39 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:11: Error: garbage following instruction -- `movs r3,r1 MOD 2'
+../src/main.s:12: Error: immediate expression requires a # prefix -- `mov r0,'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+17:50:06 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:11: Error: garbage following instruction -- `movs r3,#12 MOD 2'
+../src/main.s:12: Error: immediate expression requires a # prefix -- `mov r0,'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+17:50:14 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:11: Error: garbage following instruction -- `movs r3,#12 MOD 2'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+17:50:29 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:11: Error: garbage following instruction -- `mov r3,#12 MOD 2'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+17:54:45 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:11: Error: shift expression expected -- `and r3,r1,1'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+17:54:53 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: HammingDistance.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab1/HammingDistance/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HammingDistance.elf" @"objects.list"   -lm
+Finished building target: HammingDistance.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HammingDistance.elf" "HammingDistance.bin"
+arm-none-eabi-size "HammingDistance.elf"
+   text	   data	    bss	    dec	    hex	filename
+    960	   1096	   1088	   3144	    c48	HammingDistance.elf
+ 
+17:54:59 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+make: Nothing to be done for 'all'.
