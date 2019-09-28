@@ -1,0 +1,23 @@
+17:29:17 **** Incremental Build of configuration Debug for project FibonacciSerial ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\FibonacciSerial\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: FibonacciSerial.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab1/FibonacciSerial/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "FibonacciSerial.elf" @"objects.list"   -lm
+Finished building target: FibonacciSerial.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "FibonacciSerial.elf" "FibonacciSerial.bin"
+arm-none-eabi-size "FibonacciSerial.elf"
+   text	   data	    bss	    dec	    hex	filename
+    992	   1088	   1088	   3168	    c60	FibonacciSerial.elf
+ 
+
+17:29:18 Build Finished (took 825ms)
+
