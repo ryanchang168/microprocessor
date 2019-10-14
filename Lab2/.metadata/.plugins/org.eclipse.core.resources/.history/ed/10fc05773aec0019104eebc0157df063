@@ -1,0 +1,46 @@
+	.syntax unified
+	.cpu cortex-m4
+	.thumb
+.data
+	user_stack: .zero 128
+	expr_result:.word 0
+.text
+	.global main
+	postfix_expr: .asciz "-100 10 20 + - 10 +"
+main:
+	// R0 points to the string ; R1 is counter for loop postfix_expr
+	LDR R0, =postfix_expr
+	MOVS R1, -1
+	//TODO: Setup stack pointer to end of user_stack and calculate the expression using PUSH, POP operators, and store the result into expr_result
+	// let MSP to end of user_stack
+	LDR R1, =user_stack
+	ADDS R1, 128
+	MSR MSP, R1
+
+program_end:
+	B program_end
+atoi:
+	//TODO: implement a ¡§convert string to integer¡¨ function
+	// The input value is R0, while the return value is R2
+	// initialize the return value
+	MOVS R2, 0
+	loop:
+		// get the byte wanting to check
+		ADDS R1, R1, 1
+		ADDS R0, R0, R1
+		LDRB R3, [R0]
+		// check if the end of string -> negative operator -> positive operator
+		CMP R3, 0
+		BE program_end
+		CMP R3, 0x2d
+		BE negative
+		CMP R3, 0x2b
+		BE plus
+		// positive integer
+
+		// negative integer
+		negative:
+		// plus
+		plus:
+		// minus
+		minus:

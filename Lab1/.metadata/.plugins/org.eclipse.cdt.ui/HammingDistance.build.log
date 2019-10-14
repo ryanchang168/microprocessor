@@ -1,6 +1,6 @@
-17:20:35 **** Incremental Build of configuration Debug for project HammingDistance ****
+20:44:07 **** Incremental Build of configuration Debug for project HammingDistance ****
 make -j4 all 
 make: Nothing to be done for 'all'.
 
-17:20:35 Build Finished (took 185ms)
+20:44:07 Build Finished (took 167ms)
 

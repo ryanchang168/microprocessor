@@ -1,4 +1,4 @@
-17:29:17 **** Incremental Build of configuration Debug for project FibonacciSerial ****
+20:58:27 **** Incremental Build of configuration Debug for project FibonacciSerial ****
 make -j4 all 
 Building file: ../src/main.s
 Invoking: MCU GCC Assembler
@@ -19,5 +19,5 @@ arm-none-eabi-size "FibonacciSerial.elf"
     992	   1088	   1088	   3168	    c60	FibonacciSerial.elf
  
 
-17:29:18 Build Finished (took 825ms)
+20:58:28 Build Finished (took 934ms)
 

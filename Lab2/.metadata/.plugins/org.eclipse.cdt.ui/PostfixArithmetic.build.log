@@ -1,0 +1,23 @@
+19:28:19 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PostfixArithmetic.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab2/PostfixArithmetic/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PostfixArithmetic.elf" @"objects.list"   -lm
+Finished building target: PostfixArithmetic.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PostfixArithmetic.elf" "PostfixArithmetic.bin"
+arm-none-eabi-size "PostfixArithmetic.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1152	   1224	   1088	   3464	    d88	PostfixArithmetic.elf
+ 
+
+19:28:20 Build Finished (took 1s.37ms)
+

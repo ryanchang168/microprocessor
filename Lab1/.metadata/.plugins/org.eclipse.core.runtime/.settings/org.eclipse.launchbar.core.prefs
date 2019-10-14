@@ -1,8 +1,9 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:New_configuration,org.eclipse.launchbar.core.descriptorType.default\:HammingDistance Run,org.eclipse.launchbar.core.descriptorType.default\:BubbleSort Run,org.eclipse.launchbar.core.descriptorType.default\:FibonacciSerial Run
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:New_configuration,org.eclipse.launchbar.core.descriptorType.default\:HammingDistance Run,org.eclipse.launchbar.core.descriptorType.default\:FibonacciSerial Run,org.eclipse.launchbar.core.descriptorType.default\:BubbleSort Run
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:BubbleSort\ Run/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:BubbleSort\ Run/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:FibonacciSerial\ Run/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:HammingDistance\ Run/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:HammingDistance\ Run/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

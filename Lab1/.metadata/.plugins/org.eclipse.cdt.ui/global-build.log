@@ -105,3 +105,354 @@ arm-none-eabi-size "FibonacciSerial.elf"
    text	   data	    bss	    dec	    hex	filename
     992	   1088	   1088	   3168	    c60	FibonacciSerial.elf
  
+20:40:39 **** Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: HammingDistance.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab1/HammingDistance/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HammingDistance.elf" @"objects.list"   -lm
+src/main.o: In function `end_hamm':
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug/../src/main.s:38: undefined reference to `lr'
+collect2.exe: error: ld returned 1 exit status
+make: *** [HammingDistance.elf] Error 1
+makefile:34: recipe for target 'HammingDistance.elf' failed
+20:41:17 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: HammingDistance.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab1/HammingDistance/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HammingDistance.elf" @"objects.list"   -lm
+Finished building target: HammingDistance.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HammingDistance.elf" "HammingDistance.bin"
+arm-none-eabi-size "HammingDistance.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1000	   1096	   1088	   3184	    c70	HammingDistance.elf
+ 
+20:42:21 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:42:24 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:43:32 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: HammingDistance.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab1/HammingDistance/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HammingDistance.elf" @"objects.list"   -lm
+Finished building target: HammingDistance.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HammingDistance.elf" "HammingDistance.bin"
+arm-none-eabi-size "HammingDistance.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1000	   1096	   1088	   3184	    c70	HammingDistance.elf
+ 
+20:43:36 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:44:03 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\HammingDistance\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: HammingDistance.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab1/HammingDistance/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HammingDistance.elf" @"objects.list"   -lm
+Finished building target: HammingDistance.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HammingDistance.elf" "HammingDistance.bin"
+arm-none-eabi-size "HammingDistance.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1000	   1096	   1088	   3184	    c70	HammingDistance.elf
+ 
+20:44:07 **** Incremental Build of configuration Debug for project HammingDistance ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:44:33 **** Build of configuration Debug for project FibonacciSerial ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\FibonacciSerial\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: FibonacciSerial.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab1/FibonacciSerial/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "FibonacciSerial.elf" @"objects.list"   -lm
+Finished building target: FibonacciSerial.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "FibonacciSerial.elf" "FibonacciSerial.bin"
+arm-none-eabi-size "FibonacciSerial.elf"
+   text	   data	    bss	    dec	    hex	filename
+    992	   1088	   1088	   3168	    c60	FibonacciSerial.elf
+ 
+20:44:39 **** Incremental Build of configuration Debug for project FibonacciSerial ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:45:40 **** Incremental Build of configuration Debug for project FibonacciSerial ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:45:43 **** Incremental Build of configuration Debug for project FibonacciSerial ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:45:56 **** Incremental Build of configuration Debug for project FibonacciSerial ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\FibonacciSerial\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: FibonacciSerial.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab1/FibonacciSerial/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "FibonacciSerial.elf" @"objects.list"   -lm
+Finished building target: FibonacciSerial.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "FibonacciSerial.elf" "FibonacciSerial.bin"
+arm-none-eabi-size "FibonacciSerial.elf"
+   text	   data	    bss	    dec	    hex	filename
+    992	   1088	   1088	   3168	    c60	FibonacciSerial.elf
+ 
+20:45:58 **** Incremental Build of configuration Debug for project FibonacciSerial ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:46:19 **** Incremental Build of configuration Debug for project FibonacciSerial ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\FibonacciSerial\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: FibonacciSerial.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab1/FibonacciSerial/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "FibonacciSerial.elf" @"objects.list"   -lm
+Finished building target: FibonacciSerial.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "FibonacciSerial.elf" "FibonacciSerial.bin"
+arm-none-eabi-size "FibonacciSerial.elf"
+   text	   data	    bss	    dec	    hex	filename
+    992	   1088	   1088	   3168	    c60	FibonacciSerial.elf
+ 
+20:46:29 **** Incremental Build of configuration Debug for project FibonacciSerial ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:47:07 **** Incremental Build of configuration Debug for project FibonacciSerial ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:47:10 **** Incremental Build of configuration Debug for project FibonacciSerial ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:48:23 **** Incremental Build of configuration Debug for project FibonacciSerial ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\FibonacciSerial\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: FibonacciSerial.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab1/FibonacciSerial/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "FibonacciSerial.elf" @"objects.list"   -lm
+Finished building target: FibonacciSerial.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "FibonacciSerial.elf" "FibonacciSerial.bin"
+arm-none-eabi-size "FibonacciSerial.elf"
+   text	   data	    bss	    dec	    hex	filename
+    992	   1088	   1088	   3168	    c60	FibonacciSerial.elf
+ 
+20:48:26 **** Incremental Build of configuration Debug for project FibonacciSerial ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:48:50 **** Incremental Build of configuration Debug for project FibonacciSerial ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\FibonacciSerial\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: FibonacciSerial.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab1/FibonacciSerial/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "FibonacciSerial.elf" @"objects.list"   -lm
+Finished building target: FibonacciSerial.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "FibonacciSerial.elf" "FibonacciSerial.bin"
+arm-none-eabi-size "FibonacciSerial.elf"
+   text	   data	    bss	    dec	    hex	filename
+    992	   1088	   1088	   3168	    c60	FibonacciSerial.elf
+ 
+20:48:53 **** Incremental Build of configuration Debug for project FibonacciSerial ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:57:42 **** Incremental Build of configuration Debug for project FibonacciSerial ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\FibonacciSerial\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:22: Error: bad instruction `bv overflow'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+20:57:59 **** Incremental Build of configuration Debug for project FibonacciSerial ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\FibonacciSerial\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: FibonacciSerial.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab1/FibonacciSerial/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "FibonacciSerial.elf" @"objects.list"   -lm
+Finished building target: FibonacciSerial.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "FibonacciSerial.elf" "FibonacciSerial.bin"
+arm-none-eabi-size "FibonacciSerial.elf"
+   text	   data	    bss	    dec	    hex	filename
+    992	   1088	   1088	   3168	    c60	FibonacciSerial.elf
+ 
+20:58:02 **** Incremental Build of configuration Debug for project FibonacciSerial ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:58:27 **** Incremental Build of configuration Debug for project FibonacciSerial ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\FibonacciSerial\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: FibonacciSerial.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab1/FibonacciSerial/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "FibonacciSerial.elf" @"objects.list"   -lm
+Finished building target: FibonacciSerial.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "FibonacciSerial.elf" "FibonacciSerial.bin"
+arm-none-eabi-size "FibonacciSerial.elf"
+   text	   data	    bss	    dec	    hex	filename
+    992	   1088	   1088	   3168	    c60	FibonacciSerial.elf
+ 
+20:59:58 **** Build of configuration Debug for project BubbleSort ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\BubbleSort\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: BubbleSort.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab1/BubbleSort/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "BubbleSort.elf" @"objects.list"   -lm
+Finished building target: BubbleSort.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "BubbleSort.elf" "BubbleSort.bin"
+arm-none-eabi-size "BubbleSort.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1000	   1104	   1088	   3192	    c78	BubbleSort.elf
+ 
+21:01:54 **** Incremental Build of configuration Debug for project BubbleSort ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\BubbleSort\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: BubbleSort.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab1/BubbleSort/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "BubbleSort.elf" @"objects.list"   -lm
+Finished building target: BubbleSort.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "BubbleSort.elf" "BubbleSort.bin"
+arm-none-eabi-size "BubbleSort.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1000	   1104	   1088	   3192	    c78	BubbleSort.elf
+ 
+21:03:17 **** Incremental Build of configuration Debug for project BubbleSort ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\BubbleSort\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: BubbleSort.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab1/BubbleSort/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "BubbleSort.elf" @"objects.list"   -lm
+Finished building target: BubbleSort.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "BubbleSort.elf" "BubbleSort.bin"
+arm-none-eabi-size "BubbleSort.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1000	   1104	   1088	   3192	    c78	BubbleSort.elf
+ 
+21:04:49 **** Incremental Build of configuration Debug for project BubbleSort ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+21:05:29 **** Incremental Build of configuration Debug for project BubbleSort ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab1\BubbleSort\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: BubbleSort.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab1/BubbleSort/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "BubbleSort.elf" @"objects.list"   -lm
+Finished building target: BubbleSort.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "BubbleSort.elf" "BubbleSort.bin"
+arm-none-eabi-size "BubbleSort.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1000	   1104	   1088	   3192	    c78	BubbleSort.elf
+ 

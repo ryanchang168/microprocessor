@@ -3,7 +3,7 @@
 	.thumb
 .text
 .global main
-	.equ N, 100
+	.equ N,50
 fib:
 	// jump to exceedN if N < 1 or N > 100
 	cmp r0, 1
@@ -17,8 +17,9 @@ fib:
 	ble N_1_2
 	loop:
 		adds r3, r1, r2
-		cmp r3, r2
-		blt overflow
+		//cmp r3, r2
+		//blt overflow
+		bvs overflow
 		movs r1, r2
 		movs r2, r3
 		subs r0, r0, 1
@@ -40,4 +41,4 @@ endfib:
 main:
 	movs R0, #N
 	bl fib
-L: b L
+L:	b L

@@ -1,0 +1,538 @@
+21:44:05 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PostfixArithmetic.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab2/PostfixArithmetic/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PostfixArithmetic.elf" @"objects.list"   -lm
+Finished building target: PostfixArithmetic.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PostfixArithmetic.elf" "PostfixArithmetic.bin"
+arm-none-eabi-size "PostfixArithmetic.elf"
+   text	   data	    bss	    dec	    hex	filename
+    960	   1088	   1088	   3136	    c40	PostfixArithmetic.elf
+ 
+21:44:11 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+21:52:29 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PostfixArithmetic.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab2/PostfixArithmetic/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PostfixArithmetic.elf" @"objects.list"   -lm
+Finished building target: PostfixArithmetic.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PostfixArithmetic.elf" "PostfixArithmetic.bin"
+arm-none-eabi-size "PostfixArithmetic.elf"
+   text	   data	    bss	    dec	    hex	filename
+    968	   1088	   1088	   3144	    c48	PostfixArithmetic.elf
+ 
+21:52:34 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+22:12:51 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PostfixArithmetic.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab2/PostfixArithmetic/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PostfixArithmetic.elf" @"objects.list"   -lm
+Finished building target: PostfixArithmetic.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PostfixArithmetic.elf" "PostfixArithmetic.bin"
+arm-none-eabi-size "PostfixArithmetic.elf"
+   text	   data	    bss	    dec	    hex	filename
+    968	   1224	   1088	   3280	    cd0	PostfixArithmetic.elf
+ 
+22:12:58 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+22:13:00 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+22:44:58 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PostfixArithmetic.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab2/PostfixArithmetic/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PostfixArithmetic.elf" @"objects.list"   -lm
+Finished building target: PostfixArithmetic.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PostfixArithmetic.elf" "PostfixArithmetic.bin"
+arm-none-eabi-size "PostfixArithmetic.elf"
+   text	   data	    bss	    dec	    hex	filename
+    976	   1224	   1088	   3288	    cd8	PostfixArithmetic.elf
+ 
+22:45:02 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+18:20:43 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:21: Error: expression too complex -- `push R2'
+../src/main.s:26: Error: expression too complex -- `pop R8'
+../src/main.s:27: Error: expression too complex -- `pop R9'
+../src/main.s:29: Error: expression too complex -- `push R9'
+../src/main.s:34: Error: expression too complex -- `pop R8'
+../src/main.s:35: Error: expression too complex -- `pop R9'
+../src/main.s:37: Error: expression too complex -- `push R9'
+../src/main.s:44: Error: bad instruction `be done'
+../src/main.s:45: Error: ARM register expected -- `cmp $2,0'
+../src/main.s:46: Error: bad instruction `be done'
+../src/main.s:50: Error: expression too complex -- `pop R9'
+../src/main.s:67: Error: bad instruction `be done'
+../src/main.s:69: Error: bad instruction `be atoi_done'
+../src/main.s:71: Error: bad instruction `be negative'
+../src/main.s:73: Error: bad instruction `be negative'
+../src/main.s:75: Error: bad instruction `be plus'
+../src/main.s:78: Error: ARM register expected -- `mul R2,R2,10'
+../src/main.s:94: Error: ARM register expected -- `mul R2,R2,10'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+18:23:44 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:21: Error: expression too complex -- `push R2'
+../src/main.s:26: Error: expression too complex -- `pop R8'
+../src/main.s:27: Error: expression too complex -- `pop R9'
+../src/main.s:29: Error: expression too complex -- `push R9'
+../src/main.s:34: Error: expression too complex -- `pop R8'
+../src/main.s:35: Error: expression too complex -- `pop R9'
+../src/main.s:37: Error: expression too complex -- `push R9'
+../src/main.s:44: Error: bad instruction `be done'
+../src/main.s:45: Error: ARM register expected -- `cmp $2,0'
+../src/main.s:46: Error: bad instruction `be done'
+../src/main.s:50: Error: expression too complex -- `pop R9'
+../src/main.s:78: Error: ARM register expected -- `muls R2,R2,10'
+../src/main.s:94: Error: ARM register expected -- `muls R2,R2,10'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+18:23:53 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:21: Error: expression too complex -- `push R2'
+../src/main.s:26: Error: expression too complex -- `pop R8'
+../src/main.s:27: Error: expression too complex -- `pop R9'
+../src/main.s:29: Error: expression too complex -- `push R9'
+../src/main.s:34: Error: expression too complex -- `pop R8'
+../src/main.s:35: Error: expression too complex -- `pop R9'
+../src/main.s:37: Error: expression too complex -- `push R9'
+../src/main.s:44: Error: bad instruction `be done'
+../src/main.s:45: Error: ARM register expected -- `cmp $2,0'
+../src/main.s:46: Error: bad instruction `be done'
+../src/main.s:50: Error: expression too complex -- `pop R9'
+../src/main.s:94: Error: ARM register expected -- `muls R2,R2,10'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+18:24:44 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:22: Error: expression too complex -- `push R2'
+../src/main.s:27: Error: expression too complex -- `pop R8'
+../src/main.s:28: Error: expression too complex -- `pop R9'
+../src/main.s:30: Error: expression too complex -- `push R9'
+../src/main.s:35: Error: expression too complex -- `pop R8'
+../src/main.s:36: Error: expression too complex -- `pop R9'
+../src/main.s:38: Error: expression too complex -- `push R9'
+../src/main.s:51: Error: expression too complex -- `pop R9'
+../src/main.s:79: Error: Thumb-2 MUL must not set flags -- `muls R2,R2,R10'
+../src/main.s:95: Error: Thumb-2 MUL must not set flags -- `muls R2,R2,R10'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+18:25:04 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:22: Error: expression too complex -- `push R2'
+../src/main.s:27: Error: expression too complex -- `pop R8'
+../src/main.s:28: Error: expression too complex -- `pop R9'
+../src/main.s:30: Error: expression too complex -- `push R9'
+../src/main.s:35: Error: expression too complex -- `pop R8'
+../src/main.s:36: Error: expression too complex -- `pop R9'
+../src/main.s:38: Error: expression too complex -- `push R9'
+../src/main.s:51: Error: expression too complex -- `pop R9'
+../src/main.s:95: Error: Thumb-2 MUL must not set flags -- `muls R2,R2,R10'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+18:25:52 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:22: Error: expression too complex -- `push R2'
+../src/main.s:27: Error: expression too complex -- `pop R8'
+../src/main.s:28: Error: expression too complex -- `pop R9'
+../src/main.s:30: Error: expression too complex -- `push R9'
+../src/main.s:35: Error: expression too complex -- `pop R8'
+../src/main.s:36: Error: expression too complex -- `pop R9'
+../src/main.s:38: Error: expression too complex -- `push R9'
+../src/main.s:51: Error: expression too complex -- `pop R9'
+../src/main.s:79: Error: Thumb-2 MUL must not set flags -- `muls R2,R2,R9'
+../src/main.s:95: Error: Thumb-2 MUL must not set flags -- `muls R2,R2,R9'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+18:26:02 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:22: Error: expression too complex -- `push R2'
+../src/main.s:27: Error: expression too complex -- `pop R8'
+../src/main.s:28: Error: expression too complex -- `pop R9'
+../src/main.s:30: Error: expression too complex -- `push R9'
+../src/main.s:35: Error: expression too complex -- `pop R8'
+../src/main.s:36: Error: expression too complex -- `pop R9'
+../src/main.s:38: Error: expression too complex -- `push R9'
+../src/main.s:51: Error: expression too complex -- `pop R9'
+../src/main.s:95: Error: Thumb-2 MUL must not set flags -- `muls R2,R2,R9'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+18:26:30 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:22: Error: expression too complex -- `push R2'
+../src/main.s:27: Error: expression too complex -- `pop R8'
+../src/main.s:28: Error: expression too complex -- `pop R9'
+../src/main.s:30: Error: expression too complex -- `push R9'
+../src/main.s:35: Error: expression too complex -- `pop R8'
+../src/main.s:36: Error: expression too complex -- `pop R9'
+../src/main.s:38: Error: expression too complex -- `push R9'
+../src/main.s:51: Error: expression too complex -- `pop R9'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+18:41:30 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:27: Error: expression too complex -- `pop R8'
+../src/main.s:28: Error: expression too complex -- `pop R9'
+../src/main.s:30: Error: expression too complex -- `push R9'
+../src/main.s:35: Error: expression too complex -- `pop R8'
+../src/main.s:36: Error: expression too complex -- `pop R9'
+../src/main.s:38: Error: expression too complex -- `push R9'
+../src/main.s:51: Error: expression too complex -- `pop R9'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+18:41:37 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:28: Error: expression too complex -- `pop R9'
+../src/main.s:30: Error: expression too complex -- `push R9'
+../src/main.s:35: Error: expression too complex -- `pop R8'
+../src/main.s:36: Error: expression too complex -- `pop R9'
+../src/main.s:38: Error: expression too complex -- `push R9'
+../src/main.s:51: Error: expression too complex -- `pop R9'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+18:42:06 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PostfixArithmetic.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab2/PostfixArithmetic/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PostfixArithmetic.elf" @"objects.list"   -lm
+Finished building target: PostfixArithmetic.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PostfixArithmetic.elf" "PostfixArithmetic.bin"
+arm-none-eabi-size "PostfixArithmetic.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1120	   1224	   1088	   3432	    d68	PostfixArithmetic.elf
+ 
+18:42:10 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+18:42:18 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+18:42:21 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+18:44:30 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+18:44:45 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+18:50:59 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PostfixArithmetic.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab2/PostfixArithmetic/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PostfixArithmetic.elf" @"objects.list"   -lm
+Finished building target: PostfixArithmetic.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PostfixArithmetic.elf" "PostfixArithmetic.bin"
+arm-none-eabi-size "PostfixArithmetic.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1120	   1224	   1088	   3432	    d68	PostfixArithmetic.elf
+ 
+18:51:05 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+18:51:26 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+18:54:06 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PostfixArithmetic.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab2/PostfixArithmetic/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PostfixArithmetic.elf" @"objects.list"   -lm
+Finished building target: PostfixArithmetic.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PostfixArithmetic.elf" "PostfixArithmetic.bin"
+arm-none-eabi-size "PostfixArithmetic.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1128	   1224	   1088	   3440	    d70	PostfixArithmetic.elf
+ 
+18:54:11 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+18:54:20 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+18:54:22 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+19:01:37 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PostfixArithmetic.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab2/PostfixArithmetic/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PostfixArithmetic.elf" @"objects.list"   -lm
+Finished building target: PostfixArithmetic.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PostfixArithmetic.elf" "PostfixArithmetic.bin"
+arm-none-eabi-size "PostfixArithmetic.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1128	   1224	   1088	   3440	    d70	PostfixArithmetic.elf
+ 
+19:02:05 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+19:02:32 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+19:07:29 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PostfixArithmetic.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab2/PostfixArithmetic/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PostfixArithmetic.elf" @"objects.list"   -lm
+Finished building target: PostfixArithmetic.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PostfixArithmetic.elf" "PostfixArithmetic.bin"
+arm-none-eabi-size "PostfixArithmetic.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1136	   1224	   1088	   3448	    d78	PostfixArithmetic.elf
+ 
+19:07:51 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+19:10:17 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PostfixArithmetic.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab2/PostfixArithmetic/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PostfixArithmetic.elf" @"objects.list"   -lm
+Finished building target: PostfixArithmetic.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PostfixArithmetic.elf" "PostfixArithmetic.bin"
+arm-none-eabi-size "PostfixArithmetic.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1136	   1224	   1088	   3448	    d78	PostfixArithmetic.elf
+ 
+19:16:07 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+19:16:13 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+19:19:17 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PostfixArithmetic.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab2/PostfixArithmetic/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PostfixArithmetic.elf" @"objects.list"   -lm
+Finished building target: PostfixArithmetic.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PostfixArithmetic.elf" "PostfixArithmetic.bin"
+arm-none-eabi-size "PostfixArithmetic.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1136	   1224	   1088	   3448	    d78	PostfixArithmetic.elf
+ 
+19:20:19 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+19:20:45 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+19:25:21 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:42: Error: bad instruction `r2, [R2]'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+19:25:46 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PostfixArithmetic.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab2/PostfixArithmetic/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PostfixArithmetic.elf" @"objects.list"   -lm
+Finished building target: PostfixArithmetic.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PostfixArithmetic.elf" "PostfixArithmetic.bin"
+arm-none-eabi-size "PostfixArithmetic.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1136	   1224	   1088	   3448	    d78	PostfixArithmetic.elf
+ 
+19:27:56 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s: Error: unaligned opcodes detected in executable segment
+make: *** [src/main.o] Error 1
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+19:28:19 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PostfixArithmetic.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab2/PostfixArithmetic/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PostfixArithmetic.elf" @"objects.list"   -lm
+Finished building target: PostfixArithmetic.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PostfixArithmetic.elf" "PostfixArithmetic.bin"
+arm-none-eabi-size "PostfixArithmetic.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1152	   1224	   1088	   3464	    d88	PostfixArithmetic.elf
+ 

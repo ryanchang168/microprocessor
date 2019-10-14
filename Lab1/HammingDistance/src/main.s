@@ -7,8 +7,8 @@
 	XYxor: .word
 .text
 .global main
-	.equ X, 0x55AA
-	.equ Y, 0xAA55
+	.equ X, 0x1234
+	.equ Y, 0x4567
 rotate_bits:
 	// do "and gate" to determine whether to add 1
 	ldr r2, =XYxor
@@ -35,7 +35,7 @@ hamm:
 	str r1, [r2]
 	bl rotate_bits
 	end_hamm:
-		bx lr
+		b L
 main:
 	ldr r0, =#X //This code will cause assemble error. Why? And how to fix.
 	ldr r1, =#Y

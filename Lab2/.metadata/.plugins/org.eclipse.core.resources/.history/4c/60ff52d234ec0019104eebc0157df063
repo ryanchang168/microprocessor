@@ -1,0 +1,24 @@
+	.syntax unified
+	.cpu cortex-m4
+	.thumb
+.data
+	user_stack: .zero 128
+	expr_result:.word 0
+.text
+	.global main
+	postfix_expr: .asciz "-100 10 20 + - 10 +"
+main:
+	LDR R0, =postfix_expr
+	//TODO: Setup stack pointer to end of user_stack and calculate the expression using PUSH, POP operators, and store the result into expr_result
+	// let MSP to end of user_stack
+	LDR R1, =user_stack
+	ADDS R1, 128
+	MSR MSP, R1
+	// R2 is counter for loop postfix_expr
+
+program_end:
+	B program_end
+atoi:
+	//TODO: implement a ¡§convert string to integer¡¨ function
+
+	BX LR
