@@ -41,25 +41,23 @@ GCD:
 
 m_zero:
 	mov r5,r1
-	pop {r0,r1,LR}
 	BX LR
 n_zero:
 	mov r5,r0
-	pop {r0,r1,LR}
 	BX LR
 m_even:
 	push {r0,r1,LR}
 	add r6,#3
 	lsr r0,#1
 	bl GCD
-	pop {r0,r1,LR}
+	pop {LR,r1,r0}
 	BX LR
 n_even:
 	push {r0,r1,LR}
 	add r6,#3
 	lsr r1,#1
 	bl GCD
-	pop {r0,r1,LR}
+	pop {LR,r1,r0}
 	BX LR
 both_even:
 	push {r0,r1,LR}
@@ -68,7 +66,7 @@ both_even:
 	lsr r1,#1
 	bl GCD
 	lsl r5,#1
-	pop {r0,r1,LR}
+	pop {LR,r1,r0}
 	BX LR
 both_odd:
 	push {r0,r1,LR}
@@ -77,12 +75,12 @@ both_odd:
 	blt swap
 	sub r0,r0,r1
 	bl GCD
-	pop {r0,r1,LR}
+	pop {LR,r1,r0}
 	BX LR
 swap:
 	sub r7,r1,r0
 	mov r1,r0
 	mov r0,r7
 	bl GCD
-	pop {r0,r1,LR}
+	pop {LR,r1,r0}
 	BX LR
