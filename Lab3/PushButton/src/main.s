@@ -113,7 +113,7 @@ Delay:
 		b Check
 		Pressed:
 			adds r1, r1, 1
-			ldr r4, =#10000
+			ldr r4, =#1000
 			// prevent switch bounce. only if 1000 PC13 = 1 in raw will be seen as dectecting the pressed
 			cmp r1, r4
 			ble Check

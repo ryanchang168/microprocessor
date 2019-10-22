@@ -1,0 +1,23 @@
+03:28:32 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1136	   1096	   1088	   3320	    cf8	Lock.elf
+ 
+
+03:28:33 Build Finished (took 891ms)
+
