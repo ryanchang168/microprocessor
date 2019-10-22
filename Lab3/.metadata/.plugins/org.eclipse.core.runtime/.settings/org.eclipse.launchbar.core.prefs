@@ -1,0 +1,7 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:LET_pattern_displayer Run,org.eclipse.launchbar.core.descriptorType.default\:PushButton Run
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:LET_pattern_displayer\ Run/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:LET_pattern_displayer\ Run/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:PushButton\ Run/activeLaunchMode=debug

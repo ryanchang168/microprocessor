@@ -6,14 +6,14 @@
 	result: .word 0
 	max_size: .word 0
 .text
-	m: .word 0x5E
-	n: .word 0x60
+	m: .word 0x27
+	n: .word 0x41
 	.global main
 main:
 	ldr r0,m
 	ldr r1,n
 	mov r6,#0  //max size
-	push {r0,r1}
+	//push {r0,r1}
 	bl GCD
 	ldr r0,=result
 	ldr r1,=max_size

@@ -1,0 +1,17 @@
+20:50:38 **** Incremental Build of configuration Debug for project gcd ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\gcd\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:13: Error: ARM register expected -- `ldr r4,[MSP]'
+../src/main.s:14: Error: constant expression expected -- `adds r7,MSP,4'
+../src/main.s:31: Error: missing expression -- `blt'
+../src/main.s:41: Error: missing expression -- `pop'
+../src/main.s:42: Error: missing expression -- `pop'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+
+20:50:39 Build Finished (took 329ms)
+

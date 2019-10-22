@@ -1,0 +1,48 @@
+	.syntax unified
+	.cpu cortex-m4
+	.thumb
+.data
+	leds: .byte 0
+.text
+	.global main
+	.equ RCC_AHB2ENR, 0x4002104C
+	.equ GPIOB_MODER, 0x48000400
+	.equ GPIOB_OTYPER, 0x48000404
+	.equ GPIOB_OSPEEDR, 0x48000408
+	.equ GPIOB_PUPDR, 0x4800040C
+	.equ GPIOB_ODR, 0x48000414
+main:
+	BL GPIO_init
+	MOVS R1, #1
+	LDR R0, =leds
+	STRB R1, [R0]
+Loop:
+	//TODO: Write the display pattern into leds variable
+	BL DisplayLED
+	BL Delay
+	B Loop
+GPIO_init:
+	//TODO: Initial LED GPIO pins as output
+	// Enable AHB2 clock to control GPIOB(2)
+	movs r0, 2
+	ldr r1, =RCC_AHB2ENR
+	str r0, [r1]
+	// set PB3, PB4, PB5, PB6 to 1
+	movs r0, 0b01010101000000
+	ldr r1, =GPIOB_MODER
+	str r0, [r1]
+	// set PB3, PB4, PB5, PB6 to high speed mode
+	movs r0, 0b10101010000000
+	ldr r1, =GPIOB_OSPEEDR
+	str r0, [r1]
+
+	ldr r0, =GPIOB_ODR
+	movs r1, 0b0101010101
+	str r1, [r0]
+	BX LR
+DisplayLED:
+	//TODO: Display LED by leds
+	BX LR
+Delay:
+	//TODO: Write a delay 1 sec function
+	BX LR

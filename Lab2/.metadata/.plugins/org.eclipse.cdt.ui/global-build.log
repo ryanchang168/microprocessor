@@ -536,3 +536,252 @@ arm-none-eabi-size "PostfixArithmetic.elf"
    text	   data	    bss	    dec	    hex	filename
    1152	   1224	   1088	   3464	    d88	PostfixArithmetic.elf
  
+19:57:20 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+19:57:22 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+19:57:31 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:40:33 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:48:13 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:49:44 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:49:44 **** Build of configuration Debug for project gcd ****
+make -j4 all 
+Building file: ../startup/startup_stm32.s
+Building file: ../startup/sysmem.c
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+Invoking: MCU GCC Assembler
+Invoking: MCU GCC Compiler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\gcd\Debug
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\gcd\Debug
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\gcd\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"startup/sysmem.d" -MT"startup/sysmem.o" -o "startup/sysmem.o" "../startup/sysmem.c"
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:13: Error: ARM register expected -- `ldr r4,[MSP]'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+../src/main.s:14: Error: constant expression expected -- `adds r7,MSP,4'
+../src/main.s:31: Error: missing expression -- `blt'
+Finished building: ../startup/startup_stm32.s
+../src/main.s:41: Error: missing expression -- `pop'
+../src/main.s:42: Error: missing expression -- `pop'
+make: *** [src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+ 
+Finished building: ../startup/sysmem.c
+ 
+20:49:54 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:50:38 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:50:38 **** Incremental Build of configuration Debug for project gcd ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\gcd\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:13: Error: ARM register expected -- `ldr r4,[MSP]'
+../src/main.s:14: Error: constant expression expected -- `adds r7,MSP,4'
+../src/main.s:31: Error: missing expression -- `blt'
+../src/main.s:41: Error: missing expression -- `pop'
+../src/main.s:42: Error: missing expression -- `pop'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+20:50:39 **** Clean-only build of configuration Debug for project lab2-gcd ****
+make -j4 clean 
+rm -rf *
+ 
+20:50:39 **** Build of configuration Debug for project lab2-gcd ****
+make -j4 all 
+Building file: ../startup/startup_stm32.s
+Building file: ../startup/sysmem.c
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\lab2-gcd\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\lab2-gcd\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"startup/sysmem.d" -MT"startup/sysmem.o" -o "startup/sysmem.o" "../startup/sysmem.c"
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\lab2-gcd\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:53: Warning: register range not in ascending order
+../src/main.s:53: Warning: register range not in ascending order
+../src/main.s:60: Warning: register range not in ascending order
+../src/main.s:60: Warning: register range not in ascending order
+../src/main.s:69: Warning: register range not in ascending order
+../src/main.s:69: Warning: register range not in ascending order
+../src/main.s:78: Warning: register range not in ascending order
+../src/main.s:78: Warning: register range not in ascending order
+../src/main.s:85: Warning: register range not in ascending order
+../src/main.s:85: Warning: register range not in ascending order
+Finished building: ../startup/startup_stm32.s
+ 
+Finished building: ../src/main.s
+ 
+Finished building: ../startup/sysmem.c
+ 
+Building target: lab2-gcd.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab2/lab2-gcd/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab2-gcd.elf" @"objects.list"   -lm
+Finished building target: lab2-gcd.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab2-gcd.elf" "lab2-gcd.bin"
+arm-none-eabi-size "lab2-gcd.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1128	   1096	   1088	   3312	    cf0	lab2-gcd.elf
+ 
+20:50:51 **** Incremental Build of configuration Debug for project lab2-gcd ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:50:52 **** Incremental Build of configuration Debug for project lab2-gcd ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:52:28 **** Incremental Build of configuration Debug for project lab2-gcd ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\lab2-gcd\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:53: Warning: register range not in ascending order
+../src/main.s:53: Warning: register range not in ascending order
+../src/main.s:60: Warning: register range not in ascending order
+../src/main.s:60: Warning: register range not in ascending order
+../src/main.s:69: Warning: register range not in ascending order
+../src/main.s:69: Warning: register range not in ascending order
+../src/main.s:78: Warning: register range not in ascending order
+../src/main.s:78: Warning: register range not in ascending order
+../src/main.s:85: Warning: register range not in ascending order
+../src/main.s:85: Warning: register range not in ascending order
+Finished building: ../src/main.s
+ 
+Building target: lab2-gcd.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab2/lab2-gcd/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab2-gcd.elf" @"objects.list"   -lm
+Finished building target: lab2-gcd.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab2-gcd.elf" "lab2-gcd.bin"
+arm-none-eabi-size "lab2-gcd.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1128	   1096	   1088	   3312	    cf0	lab2-gcd.elf
+ 
+20:52:30 **** Incremental Build of configuration Debug for project lab2-gcd ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:53:43 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:54:47 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PostfixArithmetic.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab2/PostfixArithmetic/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PostfixArithmetic.elf" @"objects.list"   -lm
+Finished building target: PostfixArithmetic.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PostfixArithmetic.elf" "PostfixArithmetic.bin"
+arm-none-eabi-size "PostfixArithmetic.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1144	   1224	   1088	   3456	    d80	PostfixArithmetic.elf
+ 
+20:55:42 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:57:37 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:57:39 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:59:05 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+21:00:38 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+21:02:21 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s: Error: unaligned opcodes detected in executable segment
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+21:11:08 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PostfixArithmetic.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab2/PostfixArithmetic/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PostfixArithmetic.elf" @"objects.list"   -lm
+Finished building target: PostfixArithmetic.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PostfixArithmetic.elf" "PostfixArithmetic.bin"
+arm-none-eabi-size "PostfixArithmetic.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1184	   1224	   1088	   3496	    da8	PostfixArithmetic.elf
+ 
+21:12:04 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+21:12:42 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+21:14:19 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab2\PostfixArithmetic\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PostfixArithmetic.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab2/PostfixArithmetic/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PostfixArithmetic.elf" @"objects.list"   -lm
+Finished building target: PostfixArithmetic.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PostfixArithmetic.elf" "PostfixArithmetic.bin"
+arm-none-eabi-size "PostfixArithmetic.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1176	   1224	   1088	   3488	    da0	PostfixArithmetic.elf
+ 
+21:15:50 **** Incremental Build of configuration Debug for project PostfixArithmetic ****
+make -j4 all 
+make: Nothing to be done for 'all'.

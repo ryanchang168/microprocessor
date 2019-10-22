@@ -1,0 +1,227 @@
+07:58:32 **** Incremental Build of configuration Debug for project PushButton ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\PushButton\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PushButton.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/PushButton/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PushButton.elf" @"objects.list"   -lm
+Finished building target: PushButton.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PushButton.elf" "PushButton.bin"
+arm-none-eabi-size "PushButton.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1112	   1096	   1088	   3296	    ce0	PushButton.elf
+ 
+07:58:35 **** Incremental Build of configuration Debug for project PushButton ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+07:58:38 **** Incremental Build of configuration Debug for project PushButton ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+08:09:50 **** Incremental Build of configuration Debug for project PushButton ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+08:10:19 **** Incremental Build of configuration Debug for project PushButton ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+08:11:43 **** Incremental Build of configuration Debug for project PushButton ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+08:12:31 **** Incremental Build of configuration Debug for project PushButton ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\PushButton\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:19: Error: ARM register expected -- `bx Delay'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+08:12:41 **** Incremental Build of configuration Debug for project PushButton ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\PushButton\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PushButton.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/PushButton/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PushButton.elf" @"objects.list"   -lm
+Finished building target: PushButton.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PushButton.elf" "PushButton.bin"
+arm-none-eabi-size "PushButton.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1112	   1096	   1088	   3296	    ce0	PushButton.elf
+ 
+08:17:33 **** Incremental Build of configuration Debug for project PushButton ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+08:19:44 **** Incremental Build of configuration Debug for project PushButton ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\PushButton\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PushButton.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/PushButton/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PushButton.elf" @"objects.list"   -lm
+Finished building target: PushButton.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PushButton.elf" "PushButton.bin"
+arm-none-eabi-size "PushButton.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1120	   1096	   1088	   3304	    ce8	PushButton.elf
+ 
+08:19:55 **** Incremental Build of configuration Debug for project PushButton ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+08:27:35 **** Incremental Build of configuration Debug for project PushButton ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\PushButton\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PushButton.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/PushButton/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PushButton.elf" @"objects.list"   -lm
+Finished building target: PushButton.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PushButton.elf" "PushButton.bin"
+arm-none-eabi-size "PushButton.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1208	   1096	   1088	   3392	    d40	PushButton.elf
+ 
+08:27:59 **** Incremental Build of configuration Debug for project PushButton ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+08:36:20 **** Incremental Build of configuration Debug for project PushButton ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\PushButton\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PushButton.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/PushButton/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PushButton.elf" @"objects.list"   -lm
+Finished building target: PushButton.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PushButton.elf" "PushButton.bin"
+arm-none-eabi-size "PushButton.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1128	   1096	   1088	   3312	    cf0	PushButton.elf
+ 
+08:37:13 **** Incremental Build of configuration Debug for project PushButton ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\PushButton\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PushButton.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/PushButton/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PushButton.elf" @"objects.list"   -lm
+Finished building target: PushButton.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PushButton.elf" "PushButton.bin"
+arm-none-eabi-size "PushButton.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1128	   1096	   1088	   3312	    cf0	PushButton.elf
+ 
+08:37:35 **** Incremental Build of configuration Debug for project PushButton ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+08:39:26 **** Incremental Build of configuration Debug for project PushButton ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\PushButton\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PushButton.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/PushButton/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PushButton.elf" @"objects.list"   -lm
+Finished building target: PushButton.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PushButton.elf" "PushButton.bin"
+arm-none-eabi-size "PushButton.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1128	   1096	   1088	   3312	    cf0	PushButton.elf
+ 
+09:59:29 **** Incremental Build of configuration Debug for project PushButton ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\PushButton\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:117: Error: invalid constant (2710) after fixup
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+10:00:08 **** Incremental Build of configuration Debug for project PushButton ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\PushButton\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PushButton.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/PushButton/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PushButton.elf" @"objects.list"   -lm
+src/main.o: In function `Pressed':
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\PushButton\Debug/../src/main.s:119: undefined reference to `check'
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\PushButton\Debug/../src/main.s:122: undefined reference to `check'
+collect2.exe: error: ld returned 1 exit status
+makefile:34: recipe for target 'PushButton.elf' failed
+make: *** [PushButton.elf] Error 1
+10:00:24 **** Incremental Build of configuration Debug for project PushButton ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\PushButton\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PushButton.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/PushButton/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PushButton.elf" @"objects.list"   -lm
+Finished building target: PushButton.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PushButton.elf" "PushButton.bin"
+arm-none-eabi-size "PushButton.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1160	   1096	   1088	   3344	    d10	PushButton.elf
+ 
+10:01:05 **** Incremental Build of configuration Debug for project PushButton ****
+make -j4 all 
+make: Nothing to be done for 'all'.
