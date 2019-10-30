@@ -6,7 +6,7 @@
 	expr_result:.word 0
 .text
 	.global main
-	postfix_expr: .asciz "-175 43 -56 - - 10 20 + - 10 + "
+	postfix_expr: .asciz "-100 10 20 + - 10 + "
 main:
 	// R0 points to the string ; R1 is counter for loop postfix_expr ; R4 is constants 10 for MUL
 	LDR R0, =postfix_expr
