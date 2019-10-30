@@ -1,4 +1,4 @@
-03:28:32 **** Incremental Build of configuration Debug for project Lock ****
+20:40:56 **** Incremental Build of configuration Debug for project Lock ****
 make -j4 all 
 Building file: ../src/main.s
 Invoking: MCU GCC Assembler
@@ -19,5 +19,5 @@ arm-none-eabi-size "Lock.elf"
    1136	   1096	   1088	   3320	    cf8	Lock.elf
  
 
-03:28:33 Build Finished (took 891ms)
+20:40:57 Build Finished (took 1s.88ms)
 

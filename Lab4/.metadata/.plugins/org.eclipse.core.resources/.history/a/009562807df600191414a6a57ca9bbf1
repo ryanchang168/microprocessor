@@ -1,0 +1,32 @@
+	.syntax unified
+	.cpu cortex-m4
+	.thumb
+.data
+	arr: .byte 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0,
+	0x0, 0x0, 0x0, 0x0, 0x0 //TODO: put 0 to F 7-Seg LED pattern here
+.text
+	.global main
+main:
+	BL GPIO_init
+	BL max7219_init
+loop:
+	BL Display0toF
+	B loop
+GPIO_init:
+	//TODO: Initialize three GPIO pins as output for max7219 DIN, CS
+	and CLK
+	BX LR
+Display0toF:
+	//TODO: Display 0 to F at first digit on 7-SEG LED. Display one
+	per second.
+	BX LR
+MAX7219Send:
+	//input parameter: r0 is ADDRESS , r1 is DATA
+	//TODO: Use this function to send a message to max7219
+	BX LR
+max7219_init:
+	//TODO: Initialize max7219 registers
+	BX LR
+Delay:
+	//TODO: Write a delay 1sec function
+	BX LR

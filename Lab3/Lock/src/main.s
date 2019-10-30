@@ -2,7 +2,7 @@
 	.cpu cortex-m4
 	.thumb
 .data
-	password: .byte 0b1110
+	password: .byte 0b1001
 .text
 	.global main
 	.equ RCC_AHB2ENR, 0x4002104C

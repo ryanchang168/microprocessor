@@ -1,0 +1,77 @@
+	.syntax unified
+	.cpu cortex-m4
+	.thumb
+.data
+	//TODO: put 0 to F 7-Seg LED pattern here
+	arr: .byte 0b01111110, 0b00110000, 0b01101101, 0b01111001, 0b00110011, 0b01011011, 0b01011111, 0b01110000, 0b01111111, 0b01111011, 0b01110111, 0b00011111, 0b01001110, 0b00111101, 0b01001111, 0b01000111
+.text
+	.global main
+	.equ RCC_AHB2ENR 0x4002104C
+	.equ GPIOA_MODER, 0x48000000
+	.equ GPIOA_OSPEEDR, 0x48000008
+	.equ GPIOA_ODR, 0x48000014
+	.equ MAX7219_DIN, 0b00100000
+	.equ MAX7219_CS, 0b01000000
+	.equ MAX7219_CLK, 0b10000000
+	.equ BSRR, 0x18
+	.equ BRR, 0x28
+main:
+	BL GPIO_init
+	BL max7219_init
+loop:
+	BL Display0toF
+	B loop
+GPIO_init:
+	//TODO: Initialize three GPIO pins as output for max7219 DIN, CS and CLK
+	movs r0, 0b01
+	ldr r1, =RCC_AHB2ENR
+	str r0, [r1]
+
+	movs r0, 0b0101010000000000
+	ldr r1, =GPIOA_MODER
+	str r0, [r1]
+
+	movs r0, 0b1010100000000000
+	ldr r1, =GPIOA_OSPEEDR
+	str r0, [r1]
+	BX LR
+Display0toF:
+	//TODO: Display 0 to F at first digit on 7-SEG LED. Display one
+	per second.
+	BX LR
+MAX7219Send:
+	//input parameter: r0 is ADDRESS , r1 is DATA
+	//TODO: Use this function to send a message to max7219
+	lsl r0, r0, 8
+	adds r0, r1
+
+	BX LR
+max7219_init:
+	//TODO: Initialize max7219 registers
+	push {lr}
+	// Decode Mode
+	movs r0, 0b1001
+	movs r1, 0
+	bl MAX7219Send
+	// Intensity
+	movs r0, 0b1010
+	movs r1, 0b1111
+	bl MAX7219Send
+	// Scan Limit
+	movs r0, 0b1011
+	movs r1, 0b000
+	bl MAX7219Send
+	// Shutdown
+	movs r0, 0b1100
+	movs r1, 1
+	bl MAX7219Send
+	// Display Test
+	movs r0, 0b1111
+	movs r1, 0
+	bl MAX7219Send
+
+	pop {lr}
+	BX LR
+Delay:
+	//TODO: Write a delay 1sec function
+	BX LR
