@@ -1,0 +1,23 @@
+20:37:59 **** Incremental Build of configuration Debug for project LET_pattern_displayer ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\LET_pattern_displayer\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: LET_pattern_displayer.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/LET_pattern_displayer/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "LET_pattern_displayer.elf" @"objects.list"   -lm
+Finished building target: LET_pattern_displayer.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "LET_pattern_displayer.elf" "LET_pattern_displayer.bin"
+arm-none-eabi-size "LET_pattern_displayer.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1088	   1096	   1088	   3272	    cc8	LET_pattern_displayer.elf
+ 
+
+20:38:03 Build Finished (took 3s.889ms)
+

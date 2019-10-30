@@ -1,0 +1,6 @@
+20:52:30 **** Incremental Build of configuration Debug for project lab2-gcd ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+
+20:52:31 Build Finished (took 217ms)
+

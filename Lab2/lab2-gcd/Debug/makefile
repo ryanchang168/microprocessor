@@ -30,10 +30,10 @@ endif
 all: lab2-gcd.elf
 
 # Tool invocations
-lab2-gcd.elf: $(OBJS) $(USER_OBJS) C:\Users\ryan\workspace\lab2-gcd/LinkerScript.ld
+lab2-gcd.elf: $(OBJS) $(USER_OBJS) D:\MyFile\Engineering\microprocessor\nctu\Lab2\lab2-gcd/LinkerScript.ld
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU GCC Linker'
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/ryan/workspace/lab2-gcd/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab2-gcd.elf" @"objects.list" $(USER_OBJS) $(LIBS) -lm
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab2/lab2-gcd/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab2-gcd.elf" @"objects.list" $(USER_OBJS) $(LIBS) -lm
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build

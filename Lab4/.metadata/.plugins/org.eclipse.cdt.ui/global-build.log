@@ -1,0 +1,161 @@
+22:35:04 **** Build of configuration Debug for project Lab4.3 ****
+make -j4 all 
+Building file: ../startup/startup_stm32.s
+Building file: ../startup/sysmem.c
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab4\Lab4.3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+D:\MyFile\Engineering\microprocessor\nctu\Lab4\Lab4.3\Debug
+D:\MyFile\Engineering\microprocessor\nctu\Lab4\Lab4.3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"startup/sysmem.d" -MT"startup/sysmem.o" -o "startup/sysmem.o" "../startup/sysmem.c"
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../startup/startup_stm32.s
+ 
+Finished building: ../src/main.s
+ 
+Finished building: ../startup/sysmem.c
+ 
+Building target: Lab4.3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab4/Lab4.3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab4.3.elf" @"objects.list"   -lm
+Finished building target: Lab4.3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab4.3.elf" "Lab4.3.bin"
+arm-none-eabi-size "Lab4.3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1432	   1304	   1088	   3824	    ef0	Lab4.3.elf
+ 
+22:35:12 **** Incremental Build of configuration Debug for project Lab4.3 ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+22:35:23 **** Incremental Build of configuration Debug for project Lab4.3 ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+22:15:10 **** Incremental Build of configuration Debug for project Lab4.3 ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab4\Lab4.3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:74: Error: r13 not allowed here -- `movs r13,0b0001'
+../src/main.s:76: Error: garbage following instruction -- `udiv r10,r11,10'
+../src/main.s:77: Error: ARM register expected -- `mul r10,r10,10'
+../src/main.s:80: Error: r13 not allowed here -- `movs r0,r13'
+../src/main.s:85: Error: garbage following instruction -- `udiv r11,r11,10'
+../src/main.s:94: Error: invalid constant (989680) after fixup
+../src/main.s:101: Error: invalid constant (101) after fixup
+../src/main.s:104: Error: invalid constant (20a) after fixup
+../src/main.s:178: Error: invalid constant (f4240) after fixup
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+22:15:12 **** Incremental Build of configuration Debug for project Lab4.3 ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab4\Lab4.3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:74: Error: r13 not allowed here -- `movs r13,0b0001'
+../src/main.s:76: Error: garbage following instruction -- `udiv r10,r11,10'
+../src/main.s:77: Error: ARM register expected -- `mul r10,r10,10'
+../src/main.s:80: Error: r13 not allowed here -- `movs r0,r13'
+../src/main.s:85: Error: garbage following instruction -- `udiv r11,r11,10'
+../src/main.s:94: Error: invalid constant (989680) after fixup
+../src/main.s:101: Error: invalid constant (101) after fixup
+../src/main.s:104: Error: invalid constant (20a) after fixup
+../src/main.s:178: Error: invalid constant (f4240) after fixup
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+22:18:00 **** Incremental Build of configuration Debug for project Lab4.3 ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab4\Lab4.3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:76: Error: garbage following instruction -- `sdiv r10,r11,10'
+../src/main.s:77: Error: ARM register expected -- `mul r10,r10,10'
+../src/main.s:85: Error: garbage following instruction -- `sdiv r11,r11,10'
+../src/main.s:102: Error: invalid constant (101) after fixup
+../src/main.s:105: Error: invalid constant (20a) after fixup
+../src/main.s:179: Error: invalid constant (f4240) after fixup
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+22:19:17 **** Incremental Build of configuration Debug for project Lab4.3 ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab4\Lab4.3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:104: Error: invalid constant (101) after fixup
+../src/main.s:107: Error: invalid constant (20a) after fixup
+../src/main.s:181: Error: invalid constant (f4240) after fixup
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+22:19:57 **** Incremental Build of configuration Debug for project Lab4.3 ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab4\Lab4.3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lab4.3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab4/Lab4.3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab4.3.elf" @"objects.list"   -lm
+src/main.o: In function `Check_Digit':
+D:\MyFile\Engineering\microprocessor\nctu\Lab4\Lab4.3\Debug/../src/main.s:90: undefined reference to `Show_Digit_Loop2'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Lab4.3.elf] Error 1
+makefile:34: recipe for target 'Lab4.3.elf' failed
+22:20:11 **** Incremental Build of configuration Debug for project Lab4.3 ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab4\Lab4.3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lab4.3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab4/Lab4.3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab4.3.elf" @"objects.list"   -lm
+Finished building target: Lab4.3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab4.3.elf" "Lab4.3.bin"
+arm-none-eabi-size "Lab4.3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1344	   1088	   1088	   3520	    dc0	Lab4.3.elf
+ 
+22:20:18 **** Incremental Build of configuration Debug for project Lab4.3 ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+22:21:36 **** Incremental Build of configuration Debug for project Lab4.3 ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+22:22:40 **** Incremental Build of configuration Debug for project Lab4.3 ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+22:22:46 **** Incremental Build of configuration Debug for project Lab4.3 ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+22:22:53 **** Incremental Build of configuration Debug for project Lab4.3 ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+22:22:56 **** Incremental Build of configuration Debug for project Lab4.3 ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+22:23:17 **** Incremental Build of configuration Debug for project Lab4.3 ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+22:23:20 **** Incremental Build of configuration Debug for project Lab4.3 ****
+make -j4 all 
+make: Nothing to be done for 'all'.

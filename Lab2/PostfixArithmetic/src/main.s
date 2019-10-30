@@ -6,12 +6,18 @@
 	expr_result:.word 0
 .text
 	.global main
+<<<<<<< HEAD
 	postfix_expr: .asciz "-100 10 20 + - 10 + "
+=======
+	postfix_expr: .asciz "1 -1 1 -1      1 -1 + + + + +   "
+	.align 4
+>>>>>>> 5a46f3c458fc567124e759c84c7a251c7e4b6472
 main:
 	// R0 points to the string ; R1 is counter for loop postfix_expr ; R4 is constants 10 for MUL
 	LDR R0, =postfix_expr
 	MOVS R1, -1
 	MOVS R4, 10
+	MOVS R11, 0
 	//TODO: Setup stack pointer to end of user_stack and calculate the expression using PUSH, POP operators, and store the result into expr_result
 	// let MSP to end of user_stack
 	LDR R7, =user_stack
@@ -19,6 +25,9 @@ main:
 	MSR MSP, R7
 	B atoi
 	atoi_done:
+		CMP R11, 1
+		BEQ atoi
+		MOVS R11, 1
 		PUSH {R2}
 		B check
 	// plus
@@ -42,11 +51,11 @@ main:
 		LDRB R2, [R2]
 		CMP R2, 0
 		BEQ done
-		ADDS R2, R1, 1
-		ADDS R2, R2, R0
-		LDRB R2, [R2]
-		CMP R2, 0x20
-		BEQ done
+		//ADDS R2, R1, 1
+		//ADDS R2, R2, R0
+		//LDRB R2, [R2]
+		//CMP R2, 0x20
+		//BEQ done
 		B atoi
 	done:
 		LDR R8, =expr_result
@@ -70,6 +79,7 @@ atoi:
 		BEQ done
 		CMP R3, 0x20
 		BEQ atoi_done
+		MOVS R11, 0
 		CMP R5, 1
 		BEQ negative
 		CMP R3, 0x2d

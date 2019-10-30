@@ -1,0 +1,969 @@
+13:19:39 **** Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../startup/sysmem.c
+Building file: ../startup/startup_stm32.s
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"startup/sysmem.d" -MT"startup/sysmem.o" -o "startup/sysmem.o" "../startup/sysmem.c"
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../startup/startup_stm32.s
+ 
+Finished building: ../src/main.s
+ 
+Finished building: ../startup/sysmem.c
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1160	   1096	   1088	   3344	    d10	Lock.elf
+ 
+13:19:52 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+13:19:56 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+15:15:21 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1224	   1096	   1088	   3408	    d50	Lock.elf
+ 
+15:18:29 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1224	   1096	   1088	   3408	    d50	Lock.elf
+ 
+15:26:10 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+17:32:17 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1168	   1096	   1088	   3352	    d18	Lock.elf
+ 
+18:03:54 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1200	   1096	   1088	   3384	    d38	Lock.elf
+ 
+23:27:07 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1200	   1096	   1088	   3384	    d38	Lock.elf
+ 
+23:27:11 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+23:27:11 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+23:27:17 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+23:27:27 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+23:27:31 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+23:28:18 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+23:28:35 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+23:28:38 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+23:29:52 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+23:32:45 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1224	   1096	   1088	   3408	    d50	Lock.elf
+ 
+23:32:48 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+00:26:33 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:99: Error: symbol `password_check' is already defined
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+00:26:45 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:124: Warning: bignum truncated to 4 bytes
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+src/main.o: In function `Check':
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug/../src/main.s:68: undefined reference to `GPIOC_PUPDR'
+collect2.exe: error: ld returned 1 exit status
+makefile:34: recipe for target 'Lock.elf' failed
+make: *** [Lock.elf] Error 1
+01:04:54 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1168	   1096	   1088	   3352	    d18	Lock.elf
+ 
+01:04:57 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+01:05:12 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+01:05:32 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+01:05:37 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+01:05:52 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+01:06:04 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+01:06:14 **** Incremental Build of configuration Debug for project PushButton ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\PushButton\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: PushButton.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/PushButton/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PushButton.elf" @"objects.list"   -lm
+Finished building target: PushButton.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PushButton.elf" "PushButton.bin"
+arm-none-eabi-size "PushButton.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1160	   1096	   1088	   3344	    d10	PushButton.elf
+ 
+01:06:28 **** Incremental Build of configuration Debug for project PushButton ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+01:06:32 **** Incremental Build of configuration Debug for project PushButton ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+01:06:49 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+01:06:53 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+01:14:43 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:54: Error: bad instruction `movs, r0,0b01010101'
+make: *** [src/main.o] Error 1
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+01:14:56 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1176	   1096	   1088	   3360	    d20	Lock.elf
+ 
+01:15:07 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+01:17:50 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1176	   1096	   1088	   3360	    d20	Lock.elf
+ 
+01:23:44 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1176	   1096	   1088	   3360	    d20	Lock.elf
+ 
+01:28:38 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1176	   1096	   1088	   3360	    d20	Lock.elf
+ 
+01:30:03 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+02:14:18 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:6: Error: bad instruction `password .byte 0b1100'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+02:14:29 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+src/main.o: In function `main':
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug/../src/main.s:21: undefined reference to `Delay'
+src/main.o: In function `Loop':
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug/../src/main.s:65: undefined reference to `loop'
+collect2.exe: error: ld returned 1 exit status
+makefile:34: recipe for target 'Lock.elf' failed
+make: *** [Lock.elf] Error 1
+02:15:36 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+src/main.o: In function `Loop':
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug/../src/main.s:57: undefined reference to `loop'
+collect2.exe: error: ld returned 1 exit status
+makefile:34: recipe for target 'Lock.elf' failed
+make: *** [Lock.elf] Error 1
+02:15:46 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1064	   1096	   1088	   3248	    cb0	Lock.elf
+ 
+02:16:55 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+02:17:50 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1056	   1096	   1088	   3240	    ca8	Lock.elf
+ 
+02:19:04 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1064	   1096	   1088	   3248	    cb0	Lock.elf
+ 
+02:19:45 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1056	   1096	   1088	   3240	    ca8	Lock.elf
+ 
+02:40:50 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:67: Error: garbage following instruction -- `and r1,r1 0b1111'
+../src/main.s:78: Error: symbol `Loop' is already defined
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+02:41:11 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:101: Error: symbol `Loop4' is already defined
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+02:41:39 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1128	   1096	   1088	   3312	    cf0	Lock.elf
+ 
+02:42:47 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+02:44:45 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+02:45:17 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+02:46:44 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1128	   1096	   1088	   3312	    cf0	Lock.elf
+ 
+02:47:44 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1128	   1096	   1088	   3312	    cf0	Lock.elf
+ 
+02:48:19 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1128	   1096	   1088	   3312	    cf0	Lock.elf
+ 
+02:48:49 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1128	   1096	   1088	   3312	    cf0	Lock.elf
+ 
+02:49:34 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+02:52:23 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1128	   1096	   1088	   3312	    cf0	Lock.elf
+ 
+02:53:54 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1128	   1096	   1088	   3312	    cf0	Lock.elf
+ 
+02:54:32 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1128	   1096	   1088	   3312	    cf0	Lock.elf
+ 
+02:55:59 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1128	   1096	   1088	   3312	    cf0	Lock.elf
+ 
+02:56:34 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1120	   1096	   1088	   3304	    ce8	Lock.elf
+ 
+02:57:39 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1128	   1096	   1088	   3312	    cf0	Lock.elf
+ 
+02:58:15 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+03:00:26 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+03:04:01 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1128	   1096	   1088	   3312	    cf0	Lock.elf
+ 
+03:05:25 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+03:07:12 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1128	   1096	   1088	   3312	    cf0	Lock.elf
+ 
+03:12:37 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1128	   1096	   1088	   3312	    cf0	Lock.elf
+ 
+03:13:07 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+03:14:42 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1128	   1096	   1088	   3312	    cf0	Lock.elf
+ 
+03:16:43 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1136	   1096	   1088	   3320	    cf8	Lock.elf
+ 
+03:16:54 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+03:18:05 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+03:25:48 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1224	   1096	   1088	   3408	    d50	Lock.elf
+ 
+03:28:32 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1136	   1096	   1088	   3320	    cf8	Lock.elf
+ 
+20:37:59 **** Incremental Build of configuration Debug for project LET_pattern_displayer ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\LET_pattern_displayer\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: LET_pattern_displayer.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/LET_pattern_displayer/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "LET_pattern_displayer.elf" @"objects.list"   -lm
+Finished building target: LET_pattern_displayer.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "LET_pattern_displayer.elf" "LET_pattern_displayer.bin"
+arm-none-eabi-size "LET_pattern_displayer.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1088	   1096	   1088	   3272	    cc8	LET_pattern_displayer.elf
+ 
+20:38:34 **** Incremental Build of configuration Debug for project PushButton ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:39:26 **** Incremental Build of configuration Debug for project PushButton ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+20:40:56 **** Incremental Build of configuration Debug for project Lock ****
+make -j4 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab3\Lock\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lock.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab3/Lock/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lock.elf" @"objects.list"   -lm
+Finished building target: Lock.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lock.elf" "Lock.bin"
+arm-none-eabi-size "Lock.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1136	   1096	   1088	   3320	    cf8	Lock.elf
+ 
