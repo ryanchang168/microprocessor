@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Max7219displayer/src/main.s&apos; to &apos;func.s&apos;" description="Rename resource &apos;main.s&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main.s" name="func.s" stamp="1573488226203" updateReferences="true"/>
+</session>

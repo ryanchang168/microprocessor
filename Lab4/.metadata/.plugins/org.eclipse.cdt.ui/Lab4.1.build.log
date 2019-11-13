@@ -1,6 +1,23 @@
-22:22:38 **** Incremental Build of configuration Debug for project Lab4.1 ****
+20:47:53 **** Incremental Build of configuration Debug for project Lab4.1 ****
 make -j4 all 
-make: Nothing to be done for 'all'.
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\MyFile\Engineering\microprocessor\nctu\Lab4\Lab4.1\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lab4.1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab4/Lab4.1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab4.1.elf" @"objects.list"   -lm
+Finished building target: Lab4.1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab4.1.elf" "Lab4.1.bin"
+arm-none-eabi-size "Lab4.1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1240	   1104	   1088	   3432	    d68	Lab4.1.elf
+ 
 
-22:22:38 Build Finished (took 160ms)
+20:47:55 Build Finished (took 1s.786ms)
 

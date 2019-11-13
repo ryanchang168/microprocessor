@@ -1,0 +1,6 @@
+23:46:24 **** Incremental Build of configuration Debug for project KeypadScanning ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+
+23:46:24 Build Finished (took 188ms)
+

@@ -1,0 +1,111 @@
+#include "stm32l476xx.h"
+#include "utils.h"
+
+
+unsigned int x_pin = {GPIO_Pin_0, GPIO_Pin_1, GPIO_Pin_2, GPIO_Pin_3};
+unsigned int y_pin = {GPIO_Pin_6, GPIO_Pin_5, GPIO_Pin_4, GPIO_Pin_3};
+
+// initial keypad gpio pin, X as output and Y as input
+void keypad_init()
+{
+	RCC->AHB2ENR   |= 0b110;
+
+	GPIOC->MODER   &= 0b11111111111111111111111100000000;
+	GPIOC->MODER   |= 0b00000000000000000000000001010101;
+	GPIOC->PUPDR   &= 0b11111111111111111111111100000000;
+	GPIOC->PUPDR   |= 0b00000000000000000000000001010101;
+	GPIOC->OSPEEDR &= 0b11111111111111111111111100000000;
+	GPIOC->OSPEEDR |= 0b00000000000000000000000001010101;
+	GPIOC->ODR     |= 0b00000000000000000000000000001111;
+
+	GPIOB->MODER   &= 0b11111111111111111100000000111111;
+	GPIOB->PUPDR   &= 0b11111111111111111100000000111111;
+	GPIOB->PUPDR   |= 0b00000000000000000010101010000000;
+	GPIOB->OSPEEDR &= 0b11111111111111111111111100000000;
+	GPIOB->OSPEEDR |= 0b00000000000000000000000001010101;
+}
+
+/**
+ * scan keypad value
+ *
+ * return:
+ *   >=0: key pressed value
+ *   -1: no key press
+ */
+signed char keypad_scan()
+{
+	GPIOC->BSRR = GPIO_Pin_0;
+	GPIOC->BRR  = GPIO_Pin_1;
+	GPIOC->BRR  = GPIO_Pin_2;
+	GPIOC->BRR  = GPIO_Pin_3;
+
+	if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_6))
+		return 15;
+	if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_5))
+		return 7;
+	if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_4))
+		return 4;
+	if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_3))
+		return 1;
+
+	GPIOC->BRR  = GPIO_Pin_0;
+	GPIOC->BSRR = GPIO_Pin_1;
+	GPIOC->BRR  = GPIO_Pin_2;
+	GPIOC->BRR  = GPIO_Pin_3;
+
+	if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_6))
+		return 0;
+	if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_5))
+		return 8;
+	if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_4))
+		return 5;
+	if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_3))
+		return 2;
+
+	GPIOC->BRR  = GPIO_Pin_0;
+	GPIOC->BRR  = GPIO_Pin_1;
+	GPIOC->BSRR = GPIO_Pin_2;
+	GPIOC->BRR  = GPIO_Pin_3;
+
+	if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_6))
+		return 14;
+	if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_5))
+		return 9;
+	if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_4))
+		return 6;
+	if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_3))
+		return 3;
+
+	GPIOC->BRR  = GPIO_Pin_0;
+	GPIOC->BRR  = GPIO_Pin_1;
+	GPIOC->BRR  = GPIO_Pin_2;
+	GPIOC->BSRR = GPIO_Pin_3;
+
+	if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_6))
+		return 13;
+	if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_5))
+		return 12;
+	if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_4))
+		return 11;
+	if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_3))
+		return 10;
+
+	return -1;
+}
+
+int main()
+{
+	gpio_init();
+	max7219_init();
+	keypad_init();
+	while (1)
+	{
+		int input = keypad_scan();
+		if (input >= 10)
+			display(input, 2);
+		else if (input >= 0)
+			display(input, 1);
+		else
+			display(input, 0);
+	}
+}

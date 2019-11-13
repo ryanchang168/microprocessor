@@ -1,0 +1,414 @@
+01:25:10 **** Incremental Build of configuration Debug for project multi_buttons ****
+make -j4 all 
+Building file: ../startup/sysmem.c
+Building file: ../src/func.s
+Building file: ../src/main.c
+Invoking: MCU GCC Assembler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+D:\MyFile\Engineering\microprocessor\nctu\Lab5\multi_buttons\Debug
+D:\MyFile\Engineering\microprocessor\nctu\Lab5\multi_buttons\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/func.o" "../src/func.s"
+D:\MyFile\Engineering\microprocessor\nctu\Lab5\multi_buttons\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -ID:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/inc -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"startup/sysmem.d" -MT"startup/sysmem.o" -o "startup/sysmem.o" "../startup/sysmem.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -ID:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/inc -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/func.s
+ 
+Finished building: ../src/main.c
+ 
+Finished building: ../startup/sysmem.c
+ 
+Building target: multi_buttons.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "multi_buttons.elf" @"objects.list"   -lm
+Finished building target: multi_buttons.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "multi_buttons.elf" "multi_buttons.bin"
+arm-none-eabi-size "multi_buttons.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1680	   1184	   1088	   3952	    f70	multi_buttons.elf
+ 
+01:25:14 **** Incremental Build of configuration Debug for project multi_buttons ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+01:26:53 **** Incremental Build of configuration Debug for project multi_buttons ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\MyFile\Engineering\microprocessor\nctu\Lab5\multi_buttons\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -ID:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/inc -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: multi_buttons.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "multi_buttons.elf" @"objects.list"   -lm
+Finished building target: multi_buttons.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "multi_buttons.elf" "multi_buttons.bin"
+arm-none-eabi-size "multi_buttons.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1680	   1184	   1088	   3952	    f70	multi_buttons.elf
+ 
+01:27:02 **** Incremental Build of configuration Debug for project multi_buttons ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+01:27:23 **** Incremental Build of configuration Debug for project multi_buttons ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\MyFile\Engineering\microprocessor\nctu\Lab5\multi_buttons\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -ID:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/inc -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: multi_buttons.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "multi_buttons.elf" @"objects.list"   -lm
+Finished building target: multi_buttons.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "multi_buttons.elf" "multi_buttons.bin"
+arm-none-eabi-size "multi_buttons.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1680	   1184	   1088	   3952	    f70	multi_buttons.elf
+ 
+02:03:13 **** Incremental Build of configuration Debug for project multi_buttons ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\MyFile\Engineering\microprocessor\nctu\Lab5\multi_buttons\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -ID:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/inc -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:88:3: error: expected ';' before 'if'
+   if (input >= 10)
+   ^~
+../src/main.c:90:3: error: 'else' without a previous 'if'
+   else if (input >= 0)
+   ^~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:30: recipe for target 'src/main.o' failed
+02:03:24 **** Incremental Build of configuration Debug for project multi_buttons ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\MyFile\Engineering\microprocessor\nctu\Lab5\multi_buttons\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -ID:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/inc -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: multi_buttons.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "multi_buttons.elf" @"objects.list"   -lm
+Finished building target: multi_buttons.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "multi_buttons.elf" "multi_buttons.bin"
+arm-none-eabi-size "multi_buttons.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1768	   1184	   1096	   4048	    fd0	multi_buttons.elf
+ 
+02:03:26 **** Incremental Build of configuration Debug for project multi_buttons ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+02:18:56 **** Incremental Build of configuration Debug for project multi_buttons ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+02:30:50 **** Incremental Build of configuration Debug for project multi_buttons ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\MyFile\Engineering\microprocessor\nctu\Lab5\multi_buttons\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -ID:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/inc -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:90:3: error: expected ';' before 'input'
+   input = input < first ? input + 1 : input;
+   ^~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:30: recipe for target 'src/main.o' failed
+02:30:59 **** Incremental Build of configuration Debug for project multi_buttons ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\MyFile\Engineering\microprocessor\nctu\Lab5\multi_buttons\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -ID:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/inc -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: multi_buttons.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "multi_buttons.elf" @"objects.list"   -lm
+Finished building target: multi_buttons.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "multi_buttons.elf" "multi_buttons.bin"
+arm-none-eabi-size "multi_buttons.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1800	   1184	   1096	   4080	    ff0	multi_buttons.elf
+ 
+02:31:32 **** Incremental Build of configuration Debug for project multi_buttons ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\MyFile\Engineering\microprocessor\nctu\Lab5\multi_buttons\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -ID:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/inc -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: multi_buttons.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "multi_buttons.elf" @"objects.list"   -lm
+Finished building target: multi_buttons.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "multi_buttons.elf" "multi_buttons.bin"
+arm-none-eabi-size "multi_buttons.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1824	   1184	   1096	   4104	   1008	multi_buttons.elf
+ 
+02:38:37 **** Incremental Build of configuration Debug for project multi_buttons ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\MyFile\Engineering\microprocessor\nctu\Lab5\multi_buttons\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -ID:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/inc -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: multi_buttons.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "multi_buttons.elf" @"objects.list"   -lm
+Finished building target: multi_buttons.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "multi_buttons.elf" "multi_buttons.bin"
+arm-none-eabi-size "multi_buttons.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1824	   1184	   1096	   4104	   1008	multi_buttons.elf
+ 
+02:39:22 **** Incremental Build of configuration Debug for project multi_buttons ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\MyFile\Engineering\microprocessor\nctu\Lab5\multi_buttons\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -ID:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/inc -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: multi_buttons.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "multi_buttons.elf" @"objects.list"   -lm
+Finished building target: multi_buttons.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "multi_buttons.elf" "multi_buttons.bin"
+arm-none-eabi-size "multi_buttons.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1824	   1184	   1096	   4104	   1008	multi_buttons.elf
+ 
+02:49:11 **** Incremental Build of configuration Debug for project multi_buttons ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\MyFile\Engineering\microprocessor\nctu\Lab5\multi_buttons\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -ID:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/inc -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: multi_buttons.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "multi_buttons.elf" @"objects.list"   -lm
+Finished building target: multi_buttons.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "multi_buttons.elf" "multi_buttons.bin"
+arm-none-eabi-size "multi_buttons.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1824	   1184	   1096	   4104	   1008	multi_buttons.elf
+ 
+13:32:07 **** Incremental Build of configuration Debug for project multi_buttons ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\MyFile\Engineering\microprocessor\nctu\Lab5\multi_buttons\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -ID:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/inc -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: multi_buttons.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "multi_buttons.elf" @"objects.list"   -lm
+Finished building target: multi_buttons.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "multi_buttons.elf" "multi_buttons.bin"
+arm-none-eabi-size "multi_buttons.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1824	   1184	   1096	   4104	   1008	multi_buttons.elf
+ 
+13:34:47 **** Incremental Build of configuration Debug for project multi_buttons ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\MyFile\Engineering\microprocessor\nctu\Lab5\multi_buttons\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -ID:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/inc -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: multi_buttons.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "multi_buttons.elf" @"objects.list"   -lm
+Finished building target: multi_buttons.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "multi_buttons.elf" "multi_buttons.bin"
+arm-none-eabi-size "multi_buttons.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1824	   1184	   1096	   4104	   1008	multi_buttons.elf
+ 
+13:37:00 **** Incremental Build of configuration Debug for project multi_buttons ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\MyFile\Engineering\microprocessor\nctu\Lab5\multi_buttons\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -ID:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/inc -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: multi_buttons.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "multi_buttons.elf" @"objects.list"   -lm
+Finished building target: multi_buttons.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "multi_buttons.elf" "multi_buttons.bin"
+arm-none-eabi-size "multi_buttons.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1824	   1184	   1096	   4104	   1008	multi_buttons.elf
+ 
+13:38:51 **** Incremental Build of configuration Debug for project multi_buttons ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\MyFile\Engineering\microprocessor\nctu\Lab5\multi_buttons\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -ID:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/inc -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: multi_buttons.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "multi_buttons.elf" @"objects.list"   -lm
+Finished building target: multi_buttons.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "multi_buttons.elf" "multi_buttons.bin"
+arm-none-eabi-size "multi_buttons.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1824	   1184	   1096	   4104	   1008	multi_buttons.elf
+ 
+13:39:42 **** Incremental Build of configuration Debug for project multi_buttons ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\MyFile\Engineering\microprocessor\nctu\Lab5\multi_buttons\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -ID:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/inc -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: multi_buttons.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "multi_buttons.elf" @"objects.list"   -lm
+Finished building target: multi_buttons.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "multi_buttons.elf" "multi_buttons.bin"
+arm-none-eabi-size "multi_buttons.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1824	   1184	   1096	   4104	   1008	multi_buttons.elf
+ 
+13:40:29 **** Incremental Build of configuration Debug for project multi_buttons ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\MyFile\Engineering\microprocessor\nctu\Lab5\multi_buttons\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -ID:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/inc -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: multi_buttons.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "multi_buttons.elf" @"objects.list"   -lm
+Finished building target: multi_buttons.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "multi_buttons.elf" "multi_buttons.bin"
+arm-none-eabi-size "multi_buttons.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1824	   1184	   1096	   4104	   1008	multi_buttons.elf
+ 
+13:42:19 **** Incremental Build of configuration Debug for project multi_buttons ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\MyFile\Engineering\microprocessor\nctu\Lab5\multi_buttons\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -ID:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/inc -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: multi_buttons.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "multi_buttons.elf" @"objects.list"   -lm
+Finished building target: multi_buttons.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "multi_buttons.elf" "multi_buttons.bin"
+arm-none-eabi-size "multi_buttons.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1824	   1184	   1096	   4104	   1008	multi_buttons.elf
+ 
+13:43:20 **** Incremental Build of configuration Debug for project multi_buttons ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\MyFile\Engineering\microprocessor\nctu\Lab5\multi_buttons\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -ID:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/inc -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: multi_buttons.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "multi_buttons.elf" @"objects.list"   -lm
+Finished building target: multi_buttons.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "multi_buttons.elf" "multi_buttons.bin"
+arm-none-eabi-size "multi_buttons.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1824	   1184	   1096	   4104	   1008	multi_buttons.elf
+ 
+14:05:42 **** Incremental Build of configuration Debug for project multi_buttons ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\MyFile\Engineering\microprocessor\nctu\Lab5\multi_buttons\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -ID:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/inc -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: multi_buttons.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab5/multi_buttons/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "multi_buttons.elf" @"objects.list"   -lm
+Finished building target: multi_buttons.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "multi_buttons.elf" "multi_buttons.bin"
+arm-none-eabi-size "multi_buttons.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1936	   1184	   1096	   4216	   1078	multi_buttons.elf
+ 
+14:07:22 **** Incremental Build of configuration Debug for project multi_buttons ****
+make -j4 all 
+make: Nothing to be done for 'all'.

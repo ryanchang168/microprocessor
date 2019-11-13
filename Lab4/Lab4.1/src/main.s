@@ -26,6 +26,7 @@ main:
 	bl max7219_init
 loop:
 	bl Display0toF
+	bl DisplayFto0
 	b loop
 GPIO_init:
 	//TODO: Initialize three GPIO pins as output for max7219 DIN, CS and CLK
@@ -71,6 +72,32 @@ Display0toF:
 		blt Display0toF_Loop
 	pop {lr}
 	bx lr
+
+DisplayFto0:
+	//TODO: Display 0 to F at first digit on 7-SEG LED. Display one	per second.
+	push {lr}
+	// r8 count from 0 to F
+	movs r8, 15
+	DisplayFto0_Loop:
+		// r0 is digit0, r1 is data from arr
+		ldr r1, =arr
+		movs r0, 0b000100000000
+		adds r1, r1, r8
+		ldrb r1, [r1]
+
+		movs r7, 0b1000000000000000
+		adds r0, r0, r1
+		bl Loop16
+		// Delay 1 second
+		ldr r0, =4000000
+		bl Delay
+		subs r8, r8, 1
+		// check whether 0xF
+		cmp r8, 0
+		bge DisplayFto0_Loop
+	pop {lr}
+	bx lr
+
 MAX7219Send:
 	//input parameter: r0 is ADDRESS , r1 is DATA
 	//TODO: Use this function to send a message to max7219

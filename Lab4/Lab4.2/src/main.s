@@ -2,7 +2,7 @@
 	.cpu cortex-m4
 	.thumb
 .data
-	arr: .byte 8, 1, 0, 6, 1, 6, 0
+	arr: .byte 15,10,12,11,13,14,10
 .text
 	.global main
 	.equ RCC_AHB2ENR, 0x4002104C

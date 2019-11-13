@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="col" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="keypad_col"/>
+			<item value="0b0000000000010000"/>
+			<item value="0b0000000000100000"/>
+			<item value="0b0000000001000000"/>
+			<item value="x_pin[3]"/>
+			<item value="0b0000000000001000"/>
+			<item value="X_pin[1]"/>
+			<item value="0b0000000000000100"/>
+		</list>
+		<list key="replacehistory">
+			<item value="col"/>
+			<item value="y_pin[2]"/>
+			<item value="y_pin[1]"/>
+			<item value="y_pin[0]"/>
+			<item value="y_pin[3]"/>
+			<item value="x_pin[3]"/>
+			<item value="x_pin[1]"/>
+			<item value="x_pin[2]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="344" key="DIALOG_WIDTH"/>
+		<item value="1|Microsoft JhengHei UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft JhengHei UI" key="DIALOG_FONT_NAME"/>
+		<item value="442" key="DIALOG_HEIGHT"/>
+		<item value="797" key="DIALOG_X_ORIGIN"/>
+		<item value="230" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>
