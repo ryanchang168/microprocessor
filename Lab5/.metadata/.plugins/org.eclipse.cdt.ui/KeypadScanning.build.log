@@ -1,6 +1,23 @@
-23:46:24 **** Incremental Build of configuration Debug for project KeypadScanning ****
+20:43:42 **** Incremental Build of configuration Debug for project KeypadScanning ****
 make -j4 all 
-make: Nothing to be done for 'all'.
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\MyFile\Engineering\microprocessor\nctu\Lab5\KeypadScanning\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -ID:/MyFile/Engineering/microprocessor/nctu/Lab5/KeypadScanning/inc -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: KeypadScanning.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab5/KeypadScanning/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "KeypadScanning.elf" @"objects.list"   -lm
+Finished building target: KeypadScanning.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "KeypadScanning.elf" "KeypadScanning.bin"
+arm-none-eabi-size "KeypadScanning.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1680	   1184	   1088	   3952	    f70	KeypadScanning.elf
+ 
 
-23:46:24 Build Finished (took 188ms)
+20:43:46 Build Finished (took 4s.311ms)
 

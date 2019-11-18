@@ -88,8 +88,11 @@ int main()
 		int input = keypad_scan();
 		int first_col = first_col_tmp;
 		int input2 = input;
-		input += keypad_scan();
-		input = input < first ? input + 1 : input;
+		int tmp = keypad_scan();
+		if(input == 0 && tmp != -1) input = tmp * 10;
+		else if(tmp >= 10) input = input * 100 + tmp;
+		else if(tmp >=0) input = input * 10 + tmp;
+		else input = input < first ? input + 1 : input;
 
 		GPIOC->MODER &= 0b11111111111111111111111100000000;
 		if(first_col == 0) GPIOC->MODER |= 0b0000000000000000000000001010111;
@@ -97,10 +100,19 @@ int main()
 		else if(first_col == 2) GPIOC->MODER |= 0b00000000000000000000000001110101;
 		else if(first_col == 3) GPIOC->MODER |= 0b00000000000000000000000011010101;
 
-		input2 += keypad_scan();
+		tmp = keypad_scan();
+		if(input2 == 0 && tmp != -1) input2 = tmp * 10;
+		else if(tmp >= 10) input2 = input2 * 100 + tmp;
+		else if(tmp >=0) input2 = input2 * 10 + tmp;
+		else input2 = input2 < first ? input2 + 1 : input2;
+
 		input = input > input2 ? input : input2;
 
-		if (input >= 10)
+		if (input >= 1000)
+			display(input, 4);
+		else if (input >= 100)
+			display(input, 3);
+		else if (input >= 10)
 			display(input, 2);
 		else if (input >= 0)
 			display(input, 1);

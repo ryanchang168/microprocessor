@@ -1,6 +1,6 @@
-23:38:22 **** Incremental Build of configuration Debug for project Max7219displayer ****
+20:42:43 **** Incremental Build of configuration Debug for project Max7219displayer ****
 make -j4 all 
 make: Nothing to be done for 'all'.
 
-23:38:22 Build Finished (took 172ms)
+20:42:44 Build Finished (took 218ms)
 

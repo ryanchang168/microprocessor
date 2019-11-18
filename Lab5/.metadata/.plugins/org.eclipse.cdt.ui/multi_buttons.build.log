@@ -1,6 +1,6 @@
-14:07:22 **** Incremental Build of configuration Debug for project multi_buttons ****
+21:01:23 **** Incremental Build of configuration Debug for project multi_buttons ****
 make -j4 all 
 make: Nothing to be done for 'all'.
 
-14:07:23 Build Finished (took 199ms)
+21:01:23 Build Finished (took 178ms)
 
