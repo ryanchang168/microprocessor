@@ -100,7 +100,6 @@ int main()
 {
 	fpu_enable();
 	gpio_init();
-	timer_init();
 	keypad_init();
 	SystemClock_Config();
 

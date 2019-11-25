@@ -1585,3 +1585,55 @@ arm-none-eabi-size "Lab7.3.elf"
    text	   data	    bss	    dec	    hex	filename
    2400	   1112	   1096	   4608	   1200	Lab7.3.elf
  
+15:44:20 **** Incremental Build of configuration Debug for project Lab7.3 ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\MyFile\Engineering\microprocessor\nctu\Lab7\Lab7.3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/MyFile/Engineering/microprocessor/nctu/Lab7/Lab7.3/inc/" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: Lab7.3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab7/Lab7.3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab7.3.elf" @"objects.list"   -lm
+Finished building target: Lab7.3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab7.3.elf" "Lab7.3.bin"
+arm-none-eabi-size "Lab7.3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2232	   1112	   1096	   4440	   1158	Lab7.3.elf
+ 
+15:44:53 **** Incremental Build of configuration Debug for project Lab7.3 ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\MyFile\Engineering\microprocessor\nctu\Lab7\Lab7.3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/MyFile/Engineering/microprocessor/nctu/Lab7/Lab7.3/inc/" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:104:2: error: expected ';' before 'keypad_init'
+  keypad_init();
+  ^~~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:22: recipe for target 'src/main.o' failed
+15:45:00 **** Incremental Build of configuration Debug for project Lab7.3 ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\MyFile\Engineering\microprocessor\nctu\Lab7\Lab7.3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/MyFile/Engineering/microprocessor/nctu/Lab7/Lab7.3/inc/" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: Lab7.3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab7/Lab7.3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab7.3.elf" @"objects.list"   -lm
+Finished building target: Lab7.3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab7.3.elf" "Lab7.3.bin"
+arm-none-eabi-size "Lab7.3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2400	   1112	   1096	   4608	   1200	Lab7.3.elf
+ 
