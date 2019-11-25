@@ -1,0 +1,28 @@
+#include "stm32l476xx.h"
+
+extern void gpio_init();
+void SystemClock_Config();
+void SysTick_Handler();
+
+int main()
+{
+	SystemClock_Config();
+	gpio_init();
+	while (1);
+}
+
+void SystemClock_Config()
+{
+	/*RCC->CR |= 0x100; //turn on HSI16
+	RCC->CFGR |= 0x01; //for hsi16
+	RCC->CFGR |= 0x80; //for prescaler 2，原本16就會除以8，再設成2就變成一百萬cycle*/
+	SysTick->CTRL |= 4;
+	SysTick->LOAD = 3 * 1000000;
+	SysTick->VAL = 0;
+	SysTick->CTRL |= 3;
+}
+
+void SysTick_Handler()
+{
+	GPIOA->ODR = (GPIOA->ODR & 0xFFFFFFDF) | ~(GPIOA->ODR & 0x00000020);
+}

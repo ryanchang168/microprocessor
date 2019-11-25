@@ -67,11 +67,7 @@ int main(){
 		if (user_press_button())
 		{
 			//TODO: Update system clock rate
-			clock_type ++;
-			if(clock_type == 5){
-
-				clock_type = 0;
-			}
+			clock_type = (clock_type + 1) % 5;
 			SystemClock_Config(clock_type);
 		}
 		GPIOA->BSRR = (1<<5);
