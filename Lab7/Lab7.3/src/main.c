@@ -1,4 +1,4 @@
-#include "stm32l476xx.h"
+/*#include "stm32l476xx.h"
 #include "utils.h"
 
 #define DO 261.6
@@ -118,4 +118,4 @@ int main()
 		//enable
 		SysTick->CTRL |= 1;
 	}
-}
+}*/
