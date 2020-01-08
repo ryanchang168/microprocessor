@@ -70,3 +70,6 @@ org.eclipse.core.internal.resources.ResourceException: Resource '/AdvanceAlarm/i
 	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
 !SUBENTRY 1 org.eclipse.core.resources 4 368 2020-01-08 14:41:28.691
 !MESSAGE Resource '/AdvanceAlarm/inc/stm32f1xx_hal.h' does not exist.
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-01-08 15:06:13.495
+!MESSAGE Indexed 'AdvanceAlarm' (2 sources, 36 headers) in 0.235 sec: 1,207 declarations; 1,909 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)

@@ -33,8 +33,8 @@
 									<listOptionValue builtIn="false" value="NUCLEO_L476RG"/>
 									<listOptionValue builtIn="false" value="DEBUG"/>
 								</option>
-								<option id="gnu.c.compiler.option.include.paths.40159331" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
-									<listOptionValue builtIn="false" value="/inc"/>
+								<option id="gnu.c.compiler.option.include.paths.40159331" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="D:/MyFile/Engineering/microprocessor/nctu/Project/AdvanceAlarm/inc"/>
 								</option>
 								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.1204777444" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
 								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.872217619" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
@@ -140,4 +140,5 @@
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="refreshScope"/>
 </cproject>
