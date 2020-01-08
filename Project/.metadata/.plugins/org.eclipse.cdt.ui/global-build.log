@@ -1,16 +1,95 @@
-15:06:21 **** Incremental Build of configuration Debug for project AdvanceAlarm ****
+18:30:02 **** Incremental Build of configuration Debug for project AdvanceAlarm ****
 make -j4 all 
-Building file: ../startup/sysmem.c
+Building target: AdvanceAlarm.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Project/AdvanceAlarm/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "AdvanceAlarm.elf" @"objects.list"   -lm
+d:/myfile/engineering/microprocessor/sw4stm/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-writer.o): In function `_write_r':
+writer.c:(.text._write_r+0x12): undefined reference to `_write'
+d:/myfile/engineering/microprocessor/sw4stm/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-closer.o): In function `_close_r':
+closer.c:(.text._close_r+0xc): undefined reference to `_close'
+d:/myfile/engineering/microprocessor/sw4stm/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-fstatr.o): In function `_fstat_r':
+fstatr.c:(.text._fstat_r+0x10): undefined reference to `_fstat'
+d:/myfile/engineering/microprocessor/sw4stm/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-isattyr.o): In function `_isatty_r':
+isattyr.c:(.text._isatty_r+0xc): undefined reference to `_isatty'
+d:/myfile/engineering/microprocessor/sw4stm/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-lseekr.o): In function `_lseek_r':
+lseekr.c:(.text._lseek_r+0x12): undefined reference to `_lseek'
+d:/myfile/engineering/microprocessor/sw4stm/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-readr.o): In function `_read_r':
+readr.c:(.text._read_r+0x12): undefined reference to `_read'
+collect2.exe: error: ld returned 1 exit status
+makefile:34: recipe for target 'AdvanceAlarm.elf' failed
+make: *** [AdvanceAlarm.elf] Error 1
+18:30:06 **** Incremental Build of configuration Debug for project AdvanceAlarm ****
+make -j4 all 
+Building target: AdvanceAlarm.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Project/AdvanceAlarm/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "AdvanceAlarm.elf" @"objects.list"   -lm
+d:/myfile/engineering/microprocessor/sw4stm/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-writer.o): In function `_write_r':
+writer.c:(.text._write_r+0x12): undefined reference to `_write'
+d:/myfile/engineering/microprocessor/sw4stm/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-closer.o): In function `_close_r':
+closer.c:(.text._close_r+0xc): undefined reference to `_close'
+d:/myfile/engineering/microprocessor/sw4stm/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-fstatr.o): In function `_fstat_r':
+fstatr.c:(.text._fstat_r+0x10): undefined reference to `_fstat'
+d:/myfile/engineering/microprocessor/sw4stm/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-isattyr.o): In function `_isatty_r':
+isattyr.c:(.text._isatty_r+0xc): undefined reference to `_isatty'
+d:/myfile/engineering/microprocessor/sw4stm/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-lseekr.o): In function `_lseek_r':
+lseekr.c:(.text._lseek_r+0x12): undefined reference to `_lseek'
+d:/myfile/engineering/microprocessor/sw4stm/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-readr.o): In function `_read_r':
+readr.c:(.text._read_r+0x12): undefined reference to `_read'
+collect2.exe: error: ld returned 1 exit status
+makefile:34: recipe for target 'AdvanceAlarm.elf' failed
+make: *** [AdvanceAlarm.elf] Error 1
+18:35:12 **** Incremental Build of configuration Debug for project AdvanceAlarm ****
+make -j4 all 
+Building target: AdvanceAlarm.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Project/AdvanceAlarm/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "AdvanceAlarm.elf" @"objects.list"   -lm
+d:/myfile/engineering/microprocessor/sw4stm/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-writer.o): In function `_write_r':
+writer.c:(.text._write_r+0x12): undefined reference to `_write'
+d:/myfile/engineering/microprocessor/sw4stm/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-closer.o): In function `_close_r':
+closer.c:(.text._close_r+0xc): undefined reference to `_close'
+d:/myfile/engineering/microprocessor/sw4stm/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-fstatr.o): In function `_fstat_r':
+fstatr.c:(.text._fstat_r+0x10): undefined reference to `_fstat'
+d:/myfile/engineering/microprocessor/sw4stm/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-isattyr.o): In function `_isatty_r':
+isattyr.c:(.text._isatty_r+0xc): undefined reference to `_isatty'
+d:/myfile/engineering/microprocessor/sw4stm/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-lseekr.o): In function `_lseek_r':
+lseekr.c:(.text._lseek_r+0x12): undefined reference to `_lseek'
+d:/myfile/engineering/microprocessor/sw4stm/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-readr.o): In function `_read_r':
+readr.c:(.text._read_r+0x12): undefined reference to `_read'
+collect2.exe: error: ld returned 1 exit status
+make: *** [AdvanceAlarm.elf] Error 1
+makefile:34: recipe for target 'AdvanceAlarm.elf' failed
+18:35:28 **** Incremental Build of configuration Debug for project AdvanceAlarm ****
+make -j4 all 
+Building target: AdvanceAlarm.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Project/AdvanceAlarm/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "AdvanceAlarm.elf" @"objects.list"   -lm
+d:/myfile/engineering/microprocessor/sw4stm/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-writer.o): In function `_write_r':
+writer.c:(.text._write_r+0x12): undefined reference to `_write'
+d:/myfile/engineering/microprocessor/sw4stm/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-closer.o): In function `_close_r':
+closer.c:(.text._close_r+0xc): undefined reference to `_close'
+d:/myfile/engineering/microprocessor/sw4stm/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-fstatr.o): In function `_fstat_r':
+fstatr.c:(.text._fstat_r+0x10): undefined reference to `_fstat'
+d:/myfile/engineering/microprocessor/sw4stm/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-isattyr.o): In function `_isatty_r':
+isattyr.c:(.text._isatty_r+0xc): undefined reference to `_isatty'
+d:/myfile/engineering/microprocessor/sw4stm/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-lseekr.o): In function `_lseek_r':
+lseekr.c:(.text._lseek_r+0x12): undefined reference to `_lseek'
+d:/myfile/engineering/microprocessor/sw4stm/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-readr.o): In function `_read_r':
+readr.c:(.text._read_r+0x12): undefined reference to `_read'
+collect2.exe: error: ld returned 1 exit status
+make: *** [AdvanceAlarm.elf] Error 1
+makefile:34: recipe for target 'AdvanceAlarm.elf' failed
+18:36:12 **** Incremental Build of configuration Debug for project AdvanceAlarm ****
+make -j4 all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
-D:\MyFile\Engineering\microprocessor\nctu\Project\AdvanceAlarm\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -ID:/MyFile/Engineering/microprocessor/nctu/Project/AdvanceAlarm/inc -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"startup/sysmem.d" -MT"startup/sysmem.o" -o "startup/sysmem.o" "../startup/sysmem.c"
 D:\MyFile\Engineering\microprocessor\nctu\Project\AdvanceAlarm\Debug
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -ID:/MyFile/Engineering/microprocessor/nctu/Project/AdvanceAlarm/inc -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:2:0:
+../src/utility.h: In function 'HCSR04GetDistance':
+../src/utility.h:121:6: warning: variable 'timeval' set but not used [-Wunused-but-set-variable]
+  int timeval;
+      ^~~~~~~
 Finished building: ../src/main.c
- 
-Finished building: ../startup/sysmem.c
  
 Building target: AdvanceAlarm.elf
 Invoking: MCU GCC Linker
@@ -22,5 +101,14 @@ Generating binary and Printing size information:
 arm-none-eabi-objcopy -O binary "AdvanceAlarm.elf" "AdvanceAlarm.bin"
 arm-none-eabi-size "AdvanceAlarm.elf"
    text	   data	    bss	    dec	    hex	filename
-    944	   1088	   1088	   3120	    c30	AdvanceAlarm.elf
+   1112	   1088	   1088	   3288	    cd8	AdvanceAlarm.elf
  
+18:36:20 **** Incremental Build of configuration Debug for project AdvanceAlarm ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+18:36:47 **** Incremental Build of configuration Debug for project AdvanceAlarm ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+18:36:56 **** Incremental Build of configuration Debug for project AdvanceAlarm ****
+make -j4 all 
+make: Nothing to be done for 'all'.
