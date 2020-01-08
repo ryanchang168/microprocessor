@@ -162,3 +162,6 @@ arm-none-eabi-size "Lab7.3.elf"
    text	   data	    bss	    dec	    hex	filename
    2520	   1120	   1096	   4736	   1280	Lab7.3.elf
  
+19:04:00 **** Incremental Build of configuration Debug for project Lab7.3 ****
+make -j4 all 
+make: Nothing to be done for 'all'.

@@ -108,7 +108,7 @@ void end_counter()
 	TIM6->CR1 &= ~TIM_CR1_CEN;
 }
 
-void Delay_Us(uint16_t time)  //延時函數
+void Delay_Us(uint16_t time)  //撱嗆��
 {
     uint16_t i,j;
     for(i=0;i<time;i++)
@@ -116,34 +116,54 @@ void Delay_Us(uint16_t time)  //延時函數
 }
 
 int HCSR04GetDistance() {
-	int length=0;
-	int constant=58;
+	int length = 0;
+	int constant = 58;
 	int timeval;
-	int Num_Avg=5;
-	int sum=0;
+	int Num_Avg = 10;
+	int sum = 0;
 
-	for(int i=0;i<Num_Avg;i++){
+	for(int i=0; i<Num_Avg; i++){
 		//trigger
-		GPIO_SetOutputDataBit(GPIOB,1,1);
+		GPIO_SetOutputDataBit(GPIOB, 1, 1);
 		Delay_Us(20);
-		GPIO_SetOutputDataBit(GPIOB,1,0);
+		GPIO_SetOutputDataBit(GPIOB, 1, 0);
 
 		//measure
 		while(!GPIO_ReadInputDataBit(GPIOB,0));
 
 		start_counter();
 
-		while(GPIO_ReadInputDataBit(GPIOB,0));
+		while(GPIO_ReadInputDataBit(GPIOB, 0));
 
-		timeval=TIM6->CNT;
+		timeval = TIM6->CNT;
 
 		end_counter();
 
-		length=(TIM6->CNT/constant);
-		sum+=length;
+		length = (TIM6->CNT / constant);
+		sum += length;
 	}
 
-	return (length/Num_Avg);
+	return (sum / Num_Avg);
+}
+
+int SW420Vibration(){
+	int check = 0;
+	while(!check){
+		if(GPIO_ReadInputDataBit(GPIOB, 2)) check = 1;
+	}
+	return check;
+}
+
+int VoiceDetection(){
+	int check = 0;
+	int high = 0; // high voltage: no voice
+	int ctr = 0;
+	while(ctr < 100){
+		ctr += 1;
+		if(GPIO_ReadInputDataBit(GPIOB, 3)) high += 1;
+	}
+	if(high > 80) check = 1;
+	return check;
 }
 
 /*

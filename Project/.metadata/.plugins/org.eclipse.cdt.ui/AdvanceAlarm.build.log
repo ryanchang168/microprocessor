@@ -1,6 +1,6 @@
-18:36:56 **** Incremental Build of configuration Debug for project AdvanceAlarm ****
+21:48:00 **** Incremental Build of configuration Debug for project AdvanceAlarm ****
 make -j4 all 
 make: Nothing to be done for 'all'.
 
-18:36:56 Build Finished (took 171ms)
+21:48:01 Build Finished (took 162ms)
 

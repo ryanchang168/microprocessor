@@ -1,23 +1,6 @@
-21:24:58 **** Incremental Build of configuration Debug for project Lab7.3 ****
+19:04:00 **** Incremental Build of configuration Debug for project Lab7.3 ****
 make -j4 all 
-Building file: ../src/main2.c
-Invoking: MCU GCC Compiler
-D:\MyFile\Engineering\microprocessor\nctu\Lab7\Lab7.3\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/MyFile/Engineering/microprocessor/nctu/Lab7/Lab7.3/inc/" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main2.d" -MT"src/main2.o" -o "src/main2.o" "../src/main2.c"
-Finished building: ../src/main2.c
- 
-Building target: Lab7.3.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Lab7/Lab7.3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab7.3.elf" @"objects.list"   -lm
-Finished building target: Lab7.3.elf
- 
-make --no-print-directory post-build
-Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "Lab7.3.elf" "Lab7.3.bin"
-arm-none-eabi-size "Lab7.3.elf"
-   text	   data	    bss	    dec	    hex	filename
-   2520	   1120	   1096	   4736	   1280	Lab7.3.elf
- 
+make: Nothing to be done for 'all'.
 
-21:24:59 Build Finished (took 1s.178ms)
+19:04:01 Build Finished (took 1s.19ms)
 

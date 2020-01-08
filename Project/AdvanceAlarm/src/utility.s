@@ -4,7 +4,7 @@
 
 .text
 	.global gpio_init
-
+	.global test
 	.equ RCC_AHB2ENR,  0x4002104C
 	.equ RCC_APB2ENR,  0x40021060
 
@@ -25,55 +25,40 @@
 
 	.equ GPIOC_BASE,   0x48000800
 
+test:
+ 	mov r0, r0
+ 	mov r1, r1
+ 	mov r2, r2
+ 	mov r3, r3
+ 	pop {pc}
+
+
 gpio_init:
 	push {r0, r1, r2, lr}
 
 	mov  r0, 0b00000000000000000000000000000111 //GPIOA B C
 	ldr  r1, =RCC_AHB2ENR
 	ldr  r2, =#RCC_AHB2ENR
-	orr  r0,r2
+	orr  r0, r2
 	str  r0, [r1]
 
 	ldr  r1, =GPIOB_BASE // GPIOB_MODER
 	ldr  r2, [r1]
-	and  r2, 0b11111111111111111111111111110011 //PB1 output
+	and  r2, 0b11111111111111111111111100000000 //PB3 input, PB2 input, PB1 output, PB0 input
 	orr  r2, 0b00000000000000000000000000000100
-	str  r2, [r1]
-
-	ldr  r1, =GPIOB_BASE // GPIOB_MODER
-	ldr  r2, [r1]
-	and  r2, 0b11111111111111111111111111111100 //PB0 input
-	orr  r2, 0b00000000000000000000000000000000
 	str  r2, [r1]
 
 	ldr r1,=GPIOB_PUPDR
 	ldr r2, [r1]
-	and r2,#0b11111111111111111111111111110000 //PB2 & PB1 pull-up
-	orr r2, 0b00000000000000000000000000000101
+	and r2,#0b11111111111111111111111100000000 //PB3 & PB2 & PB1 & PB0 pull-up
+	orr r2, 0b00000000000000000000000001010101
 	str  r2, [r1]
 
 	ldr  r1, =GPIOB_SPEEDER
 	ldr  r2, [r1]
-	and  r2, 0b11111111111111111111111111110000 //PB1  50MHz
-	orr  r2, 0b00000000000000000000000000001010
+	and  r2, 0b11111111111111111111111100000000 //50MHz
+	orr  r2, 0b00000000000000000000000010101010
 	str  r2, [r1]
-
-	ldr  r1, =GPIOB_BASE // GPIOB_MODER
-	ldr  r2, [r1]
-	and  r2, 0b11111111111111111111111100111111 //PB3 AF
-	orr  r2, 0b00000000000000000000000010000000
-	str  r2, [r1]
-
-	ldr  r1, =GPIOB_SPEEDER
-	ldr  r2, [r1]
-	and  r2, 0b11111111111111111111111100111111 //PB3 50MHz
-	orr  r2, 0b00000000000000000000000010000000
-	str  r2, [r1]
-
-	/*ldr  r1, =GPIOB_OTYPER
-	ldr  r2, [r1]
-	and  r2, 0b11111111111111111111111111011111 //PC6 PP
-	str  r2, [r1]*/
 
 
 	pop  {r0, r1, r2, pc}
