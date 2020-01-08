@@ -1,0 +1,10 @@
+14:41:32 **** Incremental Build of configuration Debug for project AdvanceAlarm ****
+make -j4 all 
+Building target: AdvanceAlarm.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Project/AdvanceAlarm/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "AdvanceAlarm.elf" @"objects.list"   -lm
+startup/startup_stm32.o: In function `LoopFillZerobss':
+D:\MyFile\Engineering\microprocessor\nctu\Project\AdvanceAlarm\Debug/../startup/startup_stm32.s:83: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+makefile:34: recipe for target 'AdvanceAlarm.elf' failed
+make: *** [AdvanceAlarm.elf] Error 1
