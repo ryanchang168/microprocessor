@@ -7,7 +7,20 @@
  * these functions are inside the assembly source file
  */
 extern void gpio_init();
+extern void fpu_enable();
 
+/**
+ * frequency for different sound
+ */
+#define DO 261.6
+#define RE 293.7
+#define MI 329.6
+#define FA 349.2
+#define SO 392.0
+#define LA 440.0
+#define SI 493.9
+#define HI_DO 523.3
+#define DUTY_CYCLE 50
 
 /**
  * GPIO pin macros
@@ -81,6 +94,13 @@ int GPIO_ReadInputDataBit(GPIO_TypeDef *port, uint16_t pin) {
 	return (port->IDR >> pin) & 1;
 }
 
+void GPIO_SetOutputDataBit(GPIO_TypeDef *port, uint16_t pin, int val){
+	if(val==0)
+		port->ODR &= ~(1<<pin);
+	else if(val==1)
+		port->ODR |=  (1<<pin);
+}
+
 void GPIO_SetOutputDataBit(GPIO_TypeDef *port, uint16_t pin,int val){
 	if(val==0)
 		port->ODR &= ~(1<<pin);
@@ -88,6 +108,37 @@ void GPIO_SetOutputDataBit(GPIO_TypeDef *port, uint16_t pin,int val){
 		port->ODR |=  (1<<pin);
 }
 
+void timer_init()
+{
+	RCC->APB1ENR1 |= RCC_APB1ENR1_TIM2EN;
+	// enable TIM2 timer clock
+	GPIOB->AFR[0] |= GPIO_AFRL_AFSEL3_0;
+	// select AF1 for PB3 (PB3 is TIM2_CH2)
+	TIM2->CR1 |= TIM_CR1_DIR;
+	// counter used as downcounter
+	TIM2->CR1 |= TIM_CR1_ARPE;
+	// enable auto-reload preload (buffer TIM2_ARR)
+	TIM2->ARR = (uint32_t) 100;
+	// auto-reload prescaler value
+	TIM2->CCMR1 &= 0xFFFFFCFF;
+	// select compare 2 (channel 2 is configured as output)
+	TIM2->CCMR1 |= (TIM_CCMR1_OC2M_2 | TIM_CCMR1_OC2M_1);
+	// set output compare 2 mode to PWM mode 1
+	TIM2->CCMR1 |= TIM_CCMR1_OC2PE;
+	// enable output compare 2 preload register on TIM2_CCR2
+	TIM2->CCER |= TIM_CCER_CC2E;
+	// enable compare 2 output
+	TIM2->EGR = TIM_EGR_UG;
+	// re-initialize the counter and generates an update of the registers
+}
+
+void timer_config(double freq)
+{
+	TIM2->PSC = (uint32_t) (4000000 / freq / 100);
+	// prescaler value
+	TIM2->CCR2 = DUTY_CYCLE;
+	// compare 2 preload value
+}
 
 void counter_init()
 {
@@ -115,6 +166,7 @@ void Delay_Us(uint16_t time)  //撱嗆��
           for(j=0;j<9;j++);
 }
 
+// return the distance, cm
 int HCSR04GetDistance() {
 	int length = 0;
 	int constant = 58;
@@ -146,6 +198,7 @@ int HCSR04GetDistance() {
 	return (sum / Num_Avg);
 }
 
+// return whether vibrated, if so, return 1
 int SW420Vibration(){
 	int check = 0;
 	while(!check){
@@ -154,16 +207,25 @@ int SW420Vibration(){
 	return check;
 }
 
+// return whether have any sound, if so, return 1
 int VoiceDetection(){
 	int check = 0;
 	int high = 0; // high voltage: no voice
 	int ctr = 0;
-	while(ctr < 100){
+	while(ctr < 10000){
 		ctr += 1;
-		if(GPIO_ReadInputDataBit(GPIOB, 3)) high += 1;
+		if(GPIO_ReadInputDataBit(GPIOB, 6)) high += 1;
 	}
-	if(high > 80) check = 1;
-	return check;
+	if(high > 8000) check = 1;
+	return check ^ 1;
+}
+
+// return whether pressed, if so, return 1
+int PressDetection(){
+	// 0: Pressed
+	//return GPIO_ReadInputDataBit(GPIOB, 4) ^ 1;
+	GPIO_SetInputDataBit(GPIOB, 5, 0);
+	return GPIO_ReadInputDataBit(GPIOB, 4);
 }
 
 /*

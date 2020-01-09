@@ -5,6 +5,7 @@
 .text
 	.global gpio_init
 	.global test
+	.global fpu_enable
 	.equ RCC_AHB2ENR,  0x4002104C
 	.equ RCC_APB2ENR,  0x40021060
 
@@ -26,6 +27,7 @@
 	.equ GPIOC_BASE,   0x48000800
 
 test:
+	push {lr}
  	mov r0, r0
  	mov r1, r1
  	mov r2, r2
@@ -44,21 +46,35 @@ gpio_init:
 
 	ldr  r1, =GPIOB_BASE // GPIOB_MODER
 	ldr  r2, [r1]
-	and  r2, 0b11111111111111111111111100000000 //PB3 input, PB2 input, PB1 output, PB0 input
-	orr  r2, 0b00000000000000000000000000000100
+	ldr  r3, =0b11111111111111111100000000000000
+	and  r2, r3 // PB5, PB4, PB6 input, PB2 input, PB1 output, PB0 input, PB3 alternate function mode
+	orr  r2,  0b00000000000000000000000010000100
 	str  r2, [r1]
 
 	ldr r1,=GPIOB_PUPDR
 	ldr r2, [r1]
-	and r2,#0b11111111111111111111111100000000 //PB3 & PB2 & PB1 & PB0 pull-up
-	orr r2, 0b00000000000000000000000001010101
-	str  r2, [r1]
+	ldr r3,  =0b11111111111111111100000000000000
+	and r2, r3 // PB6 & PB5 & PB4 & PB3 & PB2 & PB1 & PB0 pull-up
+	ldr r3,  =0b00000000000000000001010101010101
+	orr r2, r3
+	str r2, [r1]
 
 	ldr  r1, =GPIOB_SPEEDER
 	ldr  r2, [r1]
-	and  r2, 0b11111111111111111111111100000000 //50MHz
-	orr  r2, 0b00000000000000000000000010101010
+	ldr  r3, =0b11111111111111111100000000000000
+	and  r2, r3 //50MHz
+	ldr  r3, =0b00000000000000000010101010101010
+	orr  r2, r3
 	str  r2, [r1]
 
-
 	pop  {r0, r1, r2, pc}
+
+fpu_enable:
+	push  {r0, r1, lr}
+	ldr.w r0, =0xE000ED88
+	ldr   r1, [r0]
+	orr   r1, r1, #(0xF << 20)
+	str   r1, [r0]
+	dsb
+	isb
+	pop   {r0, r1, pc}

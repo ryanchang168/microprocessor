@@ -235,3 +235,35 @@ com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: N
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:411)
 	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY fr.ac6.mcu.debug 4 0 2020-01-08 23:39:23.591
+!MESSAGE Bad file descriptor in writeArray
+!STACK 0
+java.io.IOException: Bad file descriptor in writeArray
+	at gnu.io.RXTXPort.writeArray(Native Method)
+	at gnu.io.RXTXPort$SerialOutputStream.write(RXTXPort.java:1171)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialWriter.sendCommand(SerialConsoleManager.java:592)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialWriter.resendCommand(SerialConsoleManager.java:581)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialReader.waitForOuptut(SerialConsoleManager.java:512)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialReader.run(SerialConsoleManager.java:457)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY fr.ac6.mcu.debug 4 0 2020-01-08 23:39:24.029
+!MESSAGE Bad file descriptor in nativeavailable
+!STACK 0
+java.io.IOException: Bad file descriptor in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1568)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialReader.waitForOuptut(SerialConsoleManager.java:500)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialReader.run(SerialConsoleManager.java:457)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY fr.ac6.mcu.debug 4 0 2020-01-09 12:12:02.952
+!MESSAGE Bad file descriptor in nativeavailable
+!STACK 0
+java.io.IOException: Bad file descriptor in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1568)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialReader.waitForOuptut(SerialConsoleManager.java:500)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialReader.run(SerialConsoleManager.java:457)
+	at java.lang.Thread.run(Thread.java:748)
