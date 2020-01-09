@@ -140,6 +140,18 @@ void timer_config(double freq)
 	// compare 2 preload value
 }
 
+void SystemClock_Config() {
+	//turn on HSI16
+	RCC->CR|=0x100;
+	RCC->CFGR |= 1;
+	//for prescaler 2
+	RCC->CFGR |= 0x80;
+
+	//external clock source
+	// tickint
+	SysTick->CTRL |= 2;
+}
+
 void counter_init()
 {
 	RCC->APB1ENR1 |= RCC_APB1ENR1_TIM6EN;
@@ -201,9 +213,7 @@ int HCSR04GetDistance() {
 // return whether vibrated, if so, return 1
 int SW420Vibration(){
 	int check = 0;
-	while(!check){
-		if(GPIO_ReadInputDataBit(GPIOB, 2)) check = 1;
-	}
+	if(GPIO_ReadInputDataBit(GPIOB, 2)) check = 1;
 	return check;
 }
 

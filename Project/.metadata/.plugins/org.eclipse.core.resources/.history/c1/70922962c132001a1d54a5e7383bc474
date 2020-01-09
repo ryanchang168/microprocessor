@@ -1,0 +1,81 @@
+#include "stm32l476xx.h"
+#include "utility.h"
+
+extern void gpio_init();
+extern void test();
+
+int Distance, keep = 0;
+
+void SysTick_Handler(){
+	SysTick->CTRL &= 0xfffffffe;
+	keep = 0;
+	TIM2->CR1 &= ~TIM_CR1_CEN;
+}
+
+void Set_Clock(){
+	keep = 1;
+	SysTick->LOAD = 1000000;
+	SysTick->VAL = 0;
+	SysTick->CTRL |= 1;
+}
+
+int main(void) {
+	init_hx711();
+	fpu_enable();
+	gpio_init();
+	timer_init();
+	counter_init();
+	SystemClock_Config();
+	//test(100, HCSR04GetDistance(), 10);
+	//test(100, SW420Vibration(), 10);
+	//test(100, VoiceDetection(), 100);
+	//test(100, PressDetection(), 100);
+
+
+	while(1){
+		if(keep) continue;
+		Distance = HCSR04GetDistance();
+		if(SW420Vibration()){
+			Set_Clock();
+			timer_config(HI_DO);
+			TIM2->CR1 |= TIM_CR1_CEN;
+		}
+		else if(PressDetection() > 0x800000){
+			Set_Clock();
+			timer_config(SI);
+			TIM2->CR1 |= TIM_CR1_CEN;
+		}
+		else if(Distance < 10){
+			Set_Clock();
+			timer_config(LA);
+			TIM2->CR1 |= TIM_CR1_CEN;
+		}
+		else if(Distance > 10 && Distance < 30){
+			Set_Clock();
+			timer_config(SO);
+			TIM2->CR1 |= TIM_CR1_CEN;
+		}
+		else if(Distance > 30 && Distance < 50){
+			Set_Clock();
+			timer_config(FA);
+			TIM2->CR1 |= TIM_CR1_CEN;
+		}
+		else if(Distance > 50 && Distance < 70){
+			Set_Clock();
+			timer_config(MI);
+			TIM2->CR1 |= TIM_CR1_CEN;
+		}
+		else if(Distance > 70 && Distance < 90){
+			Set_Clock();
+			timer_config(RE);
+			TIM2->CR1 |= TIM_CR1_CEN;
+		}
+		else if(VoiceDetection()){
+			Set_Clock();
+			timer_config(DO);
+			TIM2->CR1 |= TIM_CR1_CEN;
+		}
+	}
+}
+
+

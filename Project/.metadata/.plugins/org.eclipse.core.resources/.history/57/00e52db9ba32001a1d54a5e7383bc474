@@ -1,0 +1,38 @@
+#include "stm32l476xx.h"
+#include "utility.h"
+
+extern void gpio_init();
+extern void test();
+
+int Distance;
+
+int main(void) {
+	init_hx711();
+	fpu_enable();
+	gpio_init();
+	timer_init();
+	counter_init();
+	//test(100, HCSR04GetDistance(), 10);
+	//test(100, SW420Vibration(), 10);
+	//test(100, VoiceDetection(), 100);
+	//test(100, PressDetection(), 100);
+
+	TIM2->CR1 &= ~TIM_CR1_CEN;
+
+
+	while(1){
+		if(SW420Vibration()){
+			timer_config(HI_DO);
+			TIM2->CR1 |= TIM_CR1_CEN;
+		}
+		//if(HCSR04GetDistance()<5) TIM2->CR1 &= ~TIM_CR1_CEN;
+
+		//if(PressDetection()) TIM2->CR1 &= ~TIM_CR1_CEN;
+		/*if(VoiceDetection()){
+			timer_config(RE);
+			TIM2->CR1 |= TIM_CR1_CEN;
+		}*/
+	}
+}
+
+

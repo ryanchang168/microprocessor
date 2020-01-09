@@ -4,7 +4,20 @@
 extern void gpio_init();
 extern void test();
 
-int Distance;
+int Distance, keep = 0;
+
+void SysTick_Handler(){
+	SysTick->CTRL &= 0xfffffffe;
+	keep = 0;
+	TIM2->CR1 &= ~TIM_CR1_CEN;
+}
+
+void Set_Clock(){
+	keep = 1;
+	SysTick->LOAD = 1000000;
+	SysTick->VAL = 0;
+	SysTick->CTRL |= 1;
+}
 
 int main(void) {
 	init_hx711();
@@ -12,22 +25,56 @@ int main(void) {
 	gpio_init();
 	timer_init();
 	counter_init();
+	SystemClock_Config();
 	//test(100, HCSR04GetDistance(), 10);
 	//test(100, SW420Vibration(), 10);
 	//test(100, VoiceDetection(), 100);
 	//test(100, PressDetection(), 100);
-	//timer_config(DO);
-	//TIM2->CR1 |= TIM_CR1_CEN;
+
 
 	while(1){
-		//if(HCSR04GetDistance()<5) TIM2->CR1 &= ~TIM_CR1_CEN;
-		//if(SW420Vibration()) TIM2->CR1 &= ~TIM_CR1_CEN;
-		//if(PressDetection()) TIM2->CR1 &= ~TIM_CR1_CEN;
-		test(100, PressDetection(), 100);
-		/*if(VoiceDetection()){
-			timer_config(RE);
+		if(keep) continue;
+		Distance = HCSR04GetDistance();
+		if(SW420Vibration()){
+			Set_Clock();
+			timer_config(HI_DO);
+			TIM2->CR1 |= TIM_CR1_CEN;
+		}
+		else if(PressDetection() > 0x800000){
+			Set_Clock();
+			timer_config(SI);
+			TIM2->CR1 |= TIM_CR1_CEN;
+		}
+		/*else if(Distance < 10){
+			Set_Clock();
+			timer_config(LA);
 			TIM2->CR1 |= TIM_CR1_CEN;
 		}*/
+		else if(Distance > 10 && Distance < 40){
+			Set_Clock();
+			timer_config(LA);
+			TIM2->CR1 |= TIM_CR1_CEN;
+		}
+		else if(Distance > 40 && Distance < 70){
+			Set_Clock();
+			timer_config(FA);
+			TIM2->CR1 |= TIM_CR1_CEN;
+		}
+		/*else if(Distance > 50 && Distance < 70){
+			Set_Clock();
+			timer_config(MI);
+			TIM2->CR1 |= TIM_CR1_CEN;
+		}*/
+		else if(Distance > 70 && Distance < 100){
+			Set_Clock();
+			timer_config(RE);
+			TIM2->CR1 |= TIM_CR1_CEN;
+		}
+		else if(VoiceDetection()){
+			Set_Clock();
+			timer_config(DO);
+			TIM2->CR1 |= TIM_CR1_CEN;
+		}
 	}
 }
 
