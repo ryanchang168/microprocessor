@@ -222,8 +222,8 @@ int VoiceDetection(){
 
 // init hx711 for weight detection
 void init_hx711(){
-	GPIO_SetInputDataBit(GPIOB, 4, 1);
-	GPIO_SetOutputDataBit(GPIOB, 5, 0);
+	SetInputDataBit(GPIOB, 4, 1);
+	SetOutputDataBit(GPIOB, 5, 0);
 }
 
 // return whether pressed, if so, return 1
@@ -232,7 +232,7 @@ int PressDetection(){
 	Delay_Us(1);
 	int i, value = 0;
 	for(i=0; i<24; i++){
-		GPIO_SetOutputDataBit(GPIOB, 5, 1);
+		SetOutputDataBit(GPIOB, 5, 1);
 		value = value << 1;
 		Delay_Us(1);
 		GPIO_SetOutputDataBit(GPIOB, 5, 0);

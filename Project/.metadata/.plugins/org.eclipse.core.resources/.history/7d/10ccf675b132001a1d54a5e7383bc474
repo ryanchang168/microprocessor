@@ -7,7 +7,6 @@ extern void test();
 int Distance;
 
 int main(void) {
-	init_hx711();
 	fpu_enable();
 	gpio_init();
 	timer_init();
@@ -15,7 +14,7 @@ int main(void) {
 	//test(100, HCSR04GetDistance(), 10);
 	//test(100, SW420Vibration(), 10);
 	//test(100, VoiceDetection(), 100);
-	//test(100, PressDetection(), 100);
+	test(100, PressDetection(), 100);
 	//timer_config(DO);
 	//TIM2->CR1 |= TIM_CR1_CEN;
 

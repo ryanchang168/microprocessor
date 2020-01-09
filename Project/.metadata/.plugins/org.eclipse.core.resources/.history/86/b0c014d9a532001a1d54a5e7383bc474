@@ -94,11 +94,11 @@ int GPIO_ReadInputDataBit(GPIO_TypeDef *port, uint16_t pin) {
 	return (port->IDR >> pin) & 1;
 }
 
-void GPIO_SetInputDataBit(GPIO_TypeDef *port, uint16_t pin, int val){
+void GPIO_SetOutputDataBit(GPIO_TypeDef *port, uint16_t pin, int val){
 	if(val==0)
-		port->IDR &= ~(1<<pin);
+		port->ODR &= ~(1<<pin);
 	else if(val==1)
-		port->IDR |=  (1<<pin);
+		port->ODR |=  (1<<pin);
 }
 
 void GPIO_SetOutputDataBit(GPIO_TypeDef *port, uint16_t pin,int val){
@@ -220,31 +220,12 @@ int VoiceDetection(){
 	return check ^ 1;
 }
 
-// init hx711 for weight detection
-void init_hx711(){
-	GPIO_SetInputDataBit(GPIOB, 4, 1);
-	GPIO_SetOutputDataBit(GPIOB, 5, 0);
-}
-
 // return whether pressed, if so, return 1
 int PressDetection(){
-	while(GPIO_ReadInputDataBit(GPIOB, 4));
-	Delay_Us(1);
-	int i, value = 0;
-	for(i=0; i<24; i++){
-		GPIO_SetOutputDataBit(GPIOB, 5, 1);
-		value = value << 1;
-		Delay_Us(1);
-		GPIO_SetOutputDataBit(GPIOB, 5, 0);
-		if(GPIO_ReadInputDataBit(GPIOB, 4)) value++;
-		Delay_Us(1);
-	}
-	GPIO_SetOutputDataBit(GPIOB, 5, 1);
-	value ^= 0x800000;
-	Delay_Us(1);
-	GPIO_SetOutputDataBit(GPIOB, 5, 0);
-	Delay_Us(1);
-	return value;
+	// 0: Pressed
+	//return GPIO_ReadInputDataBit(GPIOB, 4) ^ 1;
+	GPIO_SetInputDataBit(GPIOB, 5, 0);
+	return GPIO_ReadInputDataBit(GPIOB, 4);
 }
 
 /*

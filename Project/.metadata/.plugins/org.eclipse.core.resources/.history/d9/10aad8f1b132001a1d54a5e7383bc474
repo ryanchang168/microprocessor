@@ -47,8 +47,8 @@ gpio_init:
 	ldr  r1, =GPIOB_BASE // GPIOB_MODER
 	ldr  r2, [r1]
 	ldr  r3, =0b11111111111111111100000000000000
-	and  r2, r3 // PB5 output, PB4 input, PB6 input, PB2 input, PB1 output, PB0 input, PB3 alternate function mode
-	ldr  r3, =0b00000000000000000000010010000100
+	and  r2, r3 // PB5 input, PB4 output, PB6 input, PB2 input, PB1 output, PB0 input, PB3 alternate function mode
+	ldr  r3, =0b00000000000000000000000110000100
 	orr  r2, r3
 	str  r2, [r1]
 
