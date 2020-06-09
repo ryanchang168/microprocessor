@@ -1,6 +1,28 @@
-22:55:47 **** Incremental Build of configuration Debug for project AdvanceAlarm ****
+11:21:35 **** Incremental Build of configuration Debug for project AdvanceAlarm ****
 make -j4 all 
-make: Nothing to be done for 'all'.
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\MyFile\Engineering\microprocessor\nctu\Project\AdvanceAlarm\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -ID:/MyFile/Engineering/microprocessor/nctu/Project/AdvanceAlarm/inc -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:2:0:
+../src/utility.h: In function 'HCSR04GetDistance':
+../src/utility.h:185:6: warning: variable 'timeval' set but not used [-Wunused-but-set-variable]
+  int timeval;
+      ^~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: AdvanceAlarm.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/MyFile/Engineering/microprocessor/nctu/Project/AdvanceAlarm/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "AdvanceAlarm.elf" @"objects.list"   -lm
+Finished building target: AdvanceAlarm.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "AdvanceAlarm.elf" "AdvanceAlarm.bin"
+arm-none-eabi-size "AdvanceAlarm.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3856	   1088	   1096	   6040	   1798	AdvanceAlarm.elf
+ 
 
-22:55:47 Build Finished (took 172ms)
+11:21:36 Build Finished (took 1s.437ms)
 

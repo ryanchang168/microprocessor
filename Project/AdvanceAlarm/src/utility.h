@@ -222,11 +222,11 @@ int VoiceDetection(){
 	int check = 0;
 	int high = 0; // high voltage: no voice
 	int ctr = 0;
-	while(ctr < 10000){
+	while(ctr < 1000){
 		ctr += 1;
 		if(GPIO_ReadInputDataBit(GPIOB, 6)) high += 1;
 	}
-	if(high > 8000) check = 1;
+	if(high > 800) check = 1;
 	return check ^ 1;
 }
 

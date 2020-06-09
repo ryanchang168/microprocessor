@@ -50,12 +50,12 @@ int main(void) {
 			timer_config(LA);
 			TIM2->CR1 |= TIM_CR1_CEN;
 		}*/
-		else if(Distance > 10 && Distance < 40){
+		else if(Distance > 10 && Distance < 60){
 			Set_Clock();
 			timer_config(LA);
 			TIM2->CR1 |= TIM_CR1_CEN;
 		}
-		else if(Distance > 40 && Distance < 70){
+		else if(Distance > 60 && Distance < 110){
 			Set_Clock();
 			timer_config(FA);
 			TIM2->CR1 |= TIM_CR1_CEN;
@@ -65,7 +65,7 @@ int main(void) {
 			timer_config(MI);
 			TIM2->CR1 |= TIM_CR1_CEN;
 		}*/
-		else if(Distance > 70 && Distance < 100){
+		else if(Distance > 110 && Distance < 160){
 			Set_Clock();
 			timer_config(RE);
 			TIM2->CR1 |= TIM_CR1_CEN;
